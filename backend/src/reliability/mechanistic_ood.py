@@ -6,7 +6,6 @@ its own covariance, so noise in another mechanism cannot widen every boundary.
 Constant references cannot identify this mechanism and must abstain.
 """
 import numpy as np
-from sklearn.covariance import LedoitWolf
 
 FEATURE_NAMES = ('pin_gain', 'pin_intercept_over_reference_mean',
                  'pin_log_relative_residual', 'conversion_gain',
@@ -24,17 +23,6 @@ def mechanism_features(samples):
         result.extend([gain, intercept / max(abs(x.mean()), .1),
                        np.log10(max(residual / max(np.std(x), .05), 1e-5))])
     return np.asarray(result, dtype=np.float64)
-
-
-def fit_known_classes(features, labels):
-    features = np.asarray(features)
-    location = np.median(features, axis=0)
-    scale = np.maximum(np.quantile(features, .9, axis=0)-np.quantile(features, .1, axis=0), .05)
-    standardized = (features-location)/scale
-    models = {str(label): LedoitWolf().fit(standardized[np.asarray(labels)==label])
-              for label in sorted(set(labels))}
-    return {'location':location, 'scale':scale, 'classes':models,
-            'features':FEATURE_NAMES, 'requires_dynamic_reference':True}
 
 
 def distance(pack, features):

@@ -1,4 +1,4 @@
-"""Minimal REST bridge for future Mendix integration."""
+"""MicroExplore backend for Mendix diagnosis, virtual experiments and compilation."""
 
 from contextlib import asynccontextmanager
 
@@ -28,7 +28,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="MicroExplore Diagnosis Prototype", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="MicroExplore Backend", version="0.1.0", lifespan=lifespan)
 app.include_router(virtual_lab_router)
 app.include_router(midterm_router)
 app.include_router(reliability_router)

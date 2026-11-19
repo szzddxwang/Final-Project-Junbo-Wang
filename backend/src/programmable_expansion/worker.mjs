@@ -1,5 +1,0 @@
-import {UartPairRuntime} from './network.mjs';
-import {CircuitRuntime} from './engine.mjs';
-let runtime=null,timer=null,last=0;
-function pump(){if(!runtime||!runtime.active||runtime.paused)return;const out=runtime.step(30000);if(!out.active||Date.now()-last>100){postMessage({type:'state',state:out});last=Date.now();}if(out.active)timer=setTimeout(pump,0);}
-self.onmessage=e=>{try{const q=e.data;if(q.action==='start'){clearTimeout(timer);runtime?.stop('New run');runtime=new (q.project.peer?UartPairRuntime:CircuitRuntime)(q.project,q.firmware).start();pump();}else if(q.action==='stop'){clearTimeout(timer);runtime?.stop();if(runtime)postMessage({type:'state',state:runtime.snapshot()});}else if(q.action==='pause'){clearTimeout(timer);runtime.paused=!runtime.paused;if(!runtime.paused)pump();else postMessage({type:'state',state:runtime.snapshot()});}else if(q.action==='input'){runtime.input(q.id,q.value);}else if(q.action==='rx')runtime.rx(q.text);}catch(e){runtime?.stop('Error');postMessage({type:'error',message:e.message});}};

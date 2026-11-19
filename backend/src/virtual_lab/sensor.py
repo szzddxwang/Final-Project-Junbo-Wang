@@ -5,7 +5,6 @@ from pathlib import Path
 
 import joblib
 import numpy as np
-from sklearn.ensemble import IsolationForest
 
 from .schemas import SensorAnalyzeRequest, SensorRequest
 
@@ -89,29 +88,6 @@ MODEL_FEATURES = (
 
 def _vector(features: dict) -> np.ndarray:
     return np.asarray([features[name] for name in MODEL_FEATURES], dtype=float)
-
-
-def train_sensor_detector(path: Path, seed: int = 47, cases: int = 320) -> dict:
-    rows = []
-    for i in range(cases):
-        rng = np.random.default_rng(seed + i)
-        request = SensorRequest(
-            true_value=float(rng.uniform(15, 35)),
-            step_change=float(rng.uniform(1, 5)),
-            noise_rms=float(rng.uniform(0.01, 0.08)),
-            response_seconds=float(rng.uniform(0.2, 0.8)),
-            seed=seed + i,
-        )
-        data = simulate_sensor(request)
-        rows.append(_vector(sensor_features(data["ideal"], data["measured"], data["sample_rate_hz"])))
-    model = IsolationForest(n_estimators=120, contamination=0.05, random_state=seed,
-                            n_jobs=2).fit(np.asarray(rows))
-    path.parent.mkdir(parents=True, exist_ok=True)
-    joblib.dump({"model": model, "features": MODEL_FEATURES,
-                 "data_source": "PYTHON_SIMULATION", "seed": seed,
-                 "training_cases": cases}, path)
-    return {"artifact": str(path), "seed": seed, "training_cases": cases,
-            "model": "IsolationForest", "data_source": "PYTHON_SIMULATION"}
 
 
 @lru_cache(maxsize=2)

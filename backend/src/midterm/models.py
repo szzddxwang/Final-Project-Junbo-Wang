@@ -1,5 +1,4 @@
 """Small multiscale temporal encoder and trainable reliability gate."""
-import numpy as np
 import torch
 from torch import nn
 class TemporalNet(nn.Module):
@@ -21,6 +20,3 @@ class ReliabilityGate(nn.Module):
         raw=self.gate(torch.cat([values,presence,quality],dim=1)) if mode=='gate' else torch.zeros_like(presence)
         weights=torch.softmax(raw.masked_fill(presence<.5,-1e9),dim=1)
         return (weights[:,:,None]*torch.softmax(logits,dim=2)).sum(dim=1),weights
-def standardize_fit(x):
-    mean=np.mean(x,axis=0);scale=np.std(x,axis=0);scale[scale<1e-6]=1
-    return mean.astype(np.float32),scale.astype(np.float32)

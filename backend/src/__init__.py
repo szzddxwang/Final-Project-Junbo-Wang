@@ -1,1 +1,1 @@
-"""MicroExplore adaptive electronics diagnosis prototype."""
+"""MicroExplore electronics diagnosis and simulation backend."""
