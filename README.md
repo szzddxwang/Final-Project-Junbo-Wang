@@ -62,7 +62,7 @@ Restoration verifies each compressed part and every restored file with SHA-256. 
 4dc89df0adbcc92eeab5b8440575b383a31ceb51a364d4801289224118ad92dc
 ```
 
-`init_local.py` generates a new private compilation credential on this computer. It is never committed. The Java actions and backend use the same local file. Do not copy a credential from the deployed website.
+`init_local.py` generates a new private compilation credential and a separate 32-character application encryption key on this computer. It preserves both files on subsequent runs. They are never committed. The Java actions and backend use the same compilation credential file. The encryption key is configured in Studio Pro as described below. Do not copy either credential from the deployed website.
 
 `setup_compiler.py` installs the included pinned Arduino CLI 1.2.2, AVR core 1.8.6 and toolchain into this checkout. It extracts Bubblewrap locally and verifies an unprivileged, isolated process. It does not need `sudo`. The installer can take several minutes, especially on a Windows-mounted drive. A successful check prints user/group 65534 and the readiness message. If the isolation check fails, stop and use a compatible WSL/Linux environment; do not disable isolation.
 
@@ -93,7 +93,9 @@ The public source's `DiagnosisAPIBaseURL` constant already defaults to `http://1
 
 ## 6. Initialize your own local administrator
 
-Before the first run, open **App Explorer → App → Security → Administrator** in Studio Pro. Set a new password for your local `MxAdmin` account and save it yourself. The public model contains randomized bootstrap values, not a shared working administrator password. Demo users remain disabled and the production security level is retained.
+Before the first run, open **App Explorer → App → Settings → Configurations**. Edit the active local configuration, normally **Default**, and open **Constants**. Set the required private constant **Encryption.EncryptionKey** to the 32 characters in `backend/config/application_encryption.key`. Copy only the key, without its line break, and save. If the constant is not listed, use **New** to select it. An unset value produces Mendix error **CE7159**. This key belongs only to this new local installation. Keep it with your local data backup; replacing it can make existing encrypted values unreadable. Do not commit the generated file or a local configuration containing the key.
+
+Then open **App Explorer → App → Security → Administrator** in Studio Pro. Set a new password for your local `MxAdmin` account and save it yourself. The public model contains randomized bootstrap values, not a shared working administrator password. Demo users remain disabled and the production security level is retained.
 
 Click **Run locally**, wait for successful startup, then **View App**. The normal local website is `http://localhost:8080/`. Sign in with your newly configured local administrator. This account exists only in the new local database. It has no relationship to the cloud accounts.
 

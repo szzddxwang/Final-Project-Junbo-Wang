@@ -21,6 +21,7 @@ __pycache__/
 .env
 .env.*
 backend/config/*.token
+backend/config/*.key
 backend/config/research.enabled
 # Lossless checked-in assets restore these generated runtime locations.
 backend/models/**
