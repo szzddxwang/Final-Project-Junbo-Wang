@@ -1,0 +1,11 @@
+{
+  "Normal": "Expected operation within engineering tolerance.",
+  "PowerSupplyFault": "Supply is missing, insufficient, or unstable.",
+  "WiringFault": "Open, missing, or incorrect electrical connection.",
+  "VoltageLevelFault": "Electrical level exceeds safe limits or is incompatible.",
+  "PolarityFault": "Power or signal polarity is reversed.",
+  "ConfigurationFault": "Electrical conditions are valid but settings prevent operation.",
+  "CommunicationFault": "A required protocol exchange or response fails.",
+  "ComponentFailure": "A part malfunctions despite appropriate external conditions.",
+  "SignalIntegrityFault": "Noise or timing instability degrades the signal."
+}

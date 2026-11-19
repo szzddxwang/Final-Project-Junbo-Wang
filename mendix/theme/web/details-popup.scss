@@ -1,0 +1,41 @@
+// Native AI details only. The action cell contains a button, never expanded content.
+.mx-ai-execution-row {
+    grid-template-columns: minmax(0, 1.15fr) 90px minmax(0, 1.8fr) 104px;
+    > * { min-width: 0; }
+    .mx-ai-details-trigger { white-space: normal; align-self: start; padding: 5px 4px; }
+}
+.mx-ai-details-popup { padding: 0; }
+.mx-window:has(.mx-ai-details-popup), .modal-dialog:has(.mx-ai-details-popup) {
+    width: min(780px, calc(100vw - 32px)) !important;
+    max-width: calc(100vw - 32px);
+    max-height: 84vh;
+}
+.modal-content:has(.mx-ai-details-popup) { max-height: 84vh; }
+.mx-ai-details-content {
+    max-height: calc(80vh - 155px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2px 14px 8px 2px;
+    color: var(--font-color-default);
+    h3 { margin: 0 0 8px; }
+    h4 { margin: 18px 0 6px; font-size: 1rem; }
+    p { margin: 0 0 8px; line-height: 1.5; overflow-wrap: normal; word-break: normal; }
+}
+.mx-ai-details-view .mx-dataview-controls { margin-top: 12px; padding-top: 10px; }
+.mx-ai-details-close { min-width: 84px; }
+@media (max-width: 700px) {
+    .mx-ai-execution-row {
+        grid-template-columns: minmax(0, 1fr) 90px;
+        .mx-ai-result-cell, .mx-ai-details-trigger { grid-column: 1 / -1; }
+        .mx-ai-details-trigger { justify-self: start; }
+    }
+    .mx-window:has(.mx-ai-details-popup), .modal-dialog:has(.mx-ai-details-popup) {
+        // Mendix reserves 20px on each side when placing mobile dialogs.
+        width: calc(100vw - 40px) !important;
+        max-width: calc(100vw - 40px);
+        max-height: 88vh;
+        // Native resize handles extend outside the dialog on touch-sized screens.
+        > .mx-resizer { display: none; }
+    }
+    .mx-ai-details-content { max-height: calc(84vh - 150px); padding-right: 6px; }
+}

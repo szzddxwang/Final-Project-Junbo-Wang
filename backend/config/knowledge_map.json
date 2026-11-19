@@ -1,0 +1,45 @@
+{
+  "Normal": [],
+  "PowerSupplyFault": [
+    {"knowledge_code": "POWER_SUPPLY_BASICS", "name": "Power Supply Basics"},
+    {"knowledge_code": "VOLTAGE_REGULATION", "name": "Voltage Regulation"},
+    {"knowledge_code": "CURRENT_REQUIREMENTS", "name": "Current Requirements"}
+  ],
+  "WiringFault": [
+    {"knowledge_code": "CIRCUIT_CONTINUITY", "name": "Circuit Continuity"},
+    {"knowledge_code": "BASIC_WIRING", "name": "Basic Wiring"},
+    {"knowledge_code": "GROUND_REFERENCE", "name": "Ground Reference"},
+    {"knowledge_code": "SIGNAL_PATH", "name": "Signal Path"}
+  ],
+  "VoltageLevelFault": [
+    {"knowledge_code": "LOGIC_LEVELS", "name": "Logic Levels"},
+    {"knowledge_code": "SAFE_INPUT_VOLTAGE", "name": "Safe Input Voltage"},
+    {"knowledge_code": "VOLTAGE_DIVIDER", "name": "Voltage Divider"},
+    {"knowledge_code": "LEVEL_SHIFTING", "name": "Level Shifting"}
+  ],
+  "PolarityFault": [
+    {"knowledge_code": "POLARITY", "name": "Polarity"},
+    {"knowledge_code": "DIODE_DIRECTION", "name": "Diode Direction"}
+  ],
+  "ConfigurationFault": [
+    {"knowledge_code": "GPIO_CONFIGURATION", "name": "GPIO Configuration"},
+    {"knowledge_code": "ADC_CONFIGURATION", "name": "ADC Configuration"},
+    {"knowledge_code": "COMMUNICATION_CONFIGURATION", "name": "Communication Configuration"}
+  ],
+  "CommunicationFault": [
+    {"knowledge_code": "I2C_BASICS", "name": "I2C Basics"},
+    {"knowledge_code": "UART_BASICS", "name": "UART Basics"},
+    {"knowledge_code": "PULLUP_RESISTORS", "name": "Pull-up Resistors"},
+    {"knowledge_code": "ADDRESSING", "name": "Addressing"},
+    {"knowledge_code": "BAUD_RATE", "name": "Baud Rate"}
+  ],
+  "ComponentFailure": [
+    {"knowledge_code": "COMPONENT_TESTING", "name": "Component Testing"},
+    {"knowledge_code": "DATASHEET_BASICS", "name": "Reading Datasheets"}
+  ],
+  "SignalIntegrityFault": [
+    {"knowledge_code": "NOISE", "name": "Electrical Noise"},
+    {"knowledge_code": "SIGNAL_INTEGRITY", "name": "Signal Integrity"},
+    {"knowledge_code": "GROUNDING", "name": "Grounding"}
+  ]
+}

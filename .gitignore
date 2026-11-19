@@ -1,0 +1,37 @@
+# Local Mendix runtime, database and generated build output
+mendix/.git/
+mendix/.mendix-cache/
+mendix/deployment/
+mendix/node_modules/
+mendix/theme-cache/
+mendix/project-settings.user.json
+mendix/*.mpr.lock
+*.mda
+*.mpk.bak
+*.lck
+*.db
+*.sqlite
+*.sqlite3
+# The .mpr SQLite file is the source model and MUST remain tracked.
+!mendix/*.mpr
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+backend/config/*.token
+backend/config/research.enabled
+# Lossless checked-in assets restore these generated runtime locations.
+backend/models/**
+!backend/models/selected_model.json
+backend/results/
+backend/compiler_downloads/
+backend/tools/programmable_simulator/arduino-data/
+backend/tools/programmable_simulator/cli/
+backend/tools/programmable_simulator/rootfs/
+backend/tools/programmable_simulator/jobs/
+backend/tools/programmable_simulator/setup-cache/
+*.restoring
+.DS_Store
+Thumbs.db

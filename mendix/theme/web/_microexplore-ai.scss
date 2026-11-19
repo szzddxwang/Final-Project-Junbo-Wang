@@ -1,0 +1,77 @@
+// Scoped native AI design system.
+.mx-ai-page .mx-ai-operation-report { white-space: pre-line; }
+.mx-ai-page .mx-ai-catalog > ul {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;
+}
+.mx-ai-page .mx-ai-catalog > ul > li { min-width: 0; padding: 0; border: 0; background: transparent; }
+@media (max-width: 900px) { .mx-ai-page .mx-ai-catalog > ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .mx-ai-page .mx-ai-catalog > ul { grid-template-columns: minmax(0, 1fr); } }
+.layout-atlas-responsive-topbar .mx-scrollcontainer-nested > .mx-scrollcontainer-vertical,
+.layout-atlas-responsive-topbar .region-content,
+.layout-atlas-responsive-topbar .region-content > .mx-scrollcontainer-wrapper,
+.layout-atlas-responsive-topbar .region-content .mx-placeholder {
+  min-width: 0;
+}
+.mx-ai-page {
+  --mx-ai-navy: #1e376a;
+  --mx-ai-blue: #315eb0;
+  --mx-ai-canvas: #f5f7fb;
+  --mx-ai-ink: #172b4d;
+  --mx-ai-muted: #64748b;
+  --mx-ai-border: #e3e9f2;
+  min-height: 100%;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 24px clamp(16px, 4vw, 48px) 64px;
+  background: var(--mx-ai-canvas);
+  color: var(--mx-ai-ink);
+  .mx-ai-container { width: min(100%, 1200px); margin-inline: auto; }
+  .mx-ai-hero {
+    background: linear-gradient(125deg, var(--mx-ai-navy), var(--mx-ai-blue) 70%, #477bc6);
+    color: white; border-radius: 22px; padding: clamp(30px, 5vw, 64px);
+    box-shadow: 0 18px 36px rgba(30, 55, 106, .16); margin-bottom: 28px;
+    h1, h2, p { color: white; }
+    h1 { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.12; }
+    p { font-size: 1.08rem; max-width: 720px; opacity: .9; }
+    .btn, .mx-link {
+      display: inline-block; margin-top: 18px; padding: 9px 18px;
+      background: white; color: var(--mx-ai-navy); border: 1px solid white;
+      border-radius: 8px; font-weight: 600; text-decoration: none;
+    }
+    .btn:hover, .mx-link:hover { background: #edf3ff; color: var(--mx-ai-navy); }
+  }
+  .mx-ai-section { margin-block: 28px 36px; }
+  .mx-ai-section-header { margin-bottom: 16px; }
+  .mx-ai-section-header p, .mx-ai-card p, .mx-ai-muted { color: var(--mx-ai-muted); }
+  .mx-ai-card, .mx-ai-form-panel, .mx-ai-results-panel, .mx-ai-chart-panel {
+    background: white; border: 1px solid var(--mx-ai-border); border-radius: 16px;
+    padding: clamp(18px, 2vw, 28px); box-shadow: 0 6px 18px rgba(23, 43, 77, .055);
+  }
+  .mx-ai-card { height: 100%; }
+  .mx-ai-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+  .mx-ai-card-grid > *, .mx-ai-form-grid > * { min-width: 0; }
+  .mx-ai-filter-bar { display: flex; gap: 12px; align-items: end; flex-wrap: wrap; }
+  .mx-ai-filter-bar > * { flex: 1 1 180px; min-width: 0; }
+  .mx-ai-form-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 20px; }
+  .mx-ai-form-panel .form-control { width: 100%; min-height: 42px; border-radius: 8px; }
+  .mx-ai-form-panel .control-label { font-weight: 600; }
+  .mx-ai-action-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .mx-ai-action-row .btn { width: auto; min-width: 140px; border-radius: 8px; padding: 9px 18px; }
+  .mx-ai-results-panel { margin-top: 18px; min-width: 0; max-width: 100%; overflow-wrap: anywhere; overflow-x: auto; }
+  .mx-ai-chart-panel { overflow-x: auto; }
+  .mx-ai-status { color: var(--mx-ai-blue); font-weight: 700; }
+  .mx-ai-empty-state { padding: 28px; text-align: center; color: var(--mx-ai-muted); }
+  // The filter view already renders the purposeful no-match message and count.
+  .mx-ai-catalog > ul > .mx-listview-empty { display: none; }
+}
+@media (max-width: 900px) {
+  .mx-ai-page .mx-ai-card-grid, .mx-ai-page .mx-ai-form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .mx-ai-page { padding: 14px 14px 42px; }
+  .mx-ai-page .mx-ai-hero { border-radius: 16px; padding: 28px 22px; }
+  .mx-ai-page .mx-ai-card-grid, .mx-ai-page .mx-ai-form-grid { grid-template-columns: minmax(0, 1fr); }
+  .mx-ai-page .mx-ai-action-row .btn { width: 100%; }
+  .mx-ai-page .mx-ai-filter-bar { display: block; }
+}

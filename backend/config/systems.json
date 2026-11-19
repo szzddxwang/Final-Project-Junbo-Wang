@@ -1,0 +1,62 @@
+{
+  "LED_GPIO": {
+    "system_name": "LED / GPIO",
+    "description": "A GPIO output driving a simple LED circuit.",
+    "expected_supply": 3.3,
+    "expected_current": 0.015,
+    "expected_output": 3.3,
+    "supported_symptoms": ["NO_POWER", "NO_OUTPUT", "INCORRECT_OUTPUT", "UNSTABLE_OUTPUT", "OTHER"],
+    "applicable_faults": ["Normal", "PowerSupplyFault", "WiringFault", "VoltageLevelFault", "PolarityFault", "ConfigurationFault", "ComponentFailure", "SignalIntegrityFault"],
+    "available_measurements": ["SUPPLY_VOLTAGE", "EXPECTED_SUPPLY_VOLTAGE", "OUTPUT_VOLTAGE", "EXPECTED_OUTPUT_VOLTAGE", "CURRENT", "EXPECTED_CURRENT", "CONTINUITY", "POLARITY_OK", "LOGIC_LEVEL", "EXPECTED_LOGIC_LEVEL", "SIGNAL_PRESENT", "CONFIGURATION_OK", "NOISE_LEVEL"]
+  },
+  "DIGITAL_INPUT": {
+    "system_name": "Digital Input / Push Button",
+    "description": "A push button or other digital input with a pull resistor.",
+    "expected_supply": 3.3,
+    "expected_current": 0.003,
+    "expected_output": 3.3,
+    "supported_symptoms": ["NO_POWER", "NO_RESPONSE", "INCORRECT_OUTPUT", "UNSTABLE_OUTPUT", "OTHER"],
+    "applicable_faults": ["Normal", "PowerSupplyFault", "WiringFault", "VoltageLevelFault", "ConfigurationFault", "ComponentFailure", "SignalIntegrityFault"],
+    "available_measurements": ["SUPPLY_VOLTAGE", "EXPECTED_SUPPLY_VOLTAGE", "OUTPUT_VOLTAGE", "EXPECTED_OUTPUT_VOLTAGE", "CONTINUITY", "LOGIC_LEVEL", "EXPECTED_LOGIC_LEVEL", "SIGNAL_PRESENT", "PULLUP_PRESENT", "CONFIGURATION_OK", "NOISE_LEVEL"]
+  },
+  "ANALOG_ADC": {
+    "system_name": "Analog Sensor / ADC",
+    "description": "An analog sensor read by an ADC input.",
+    "expected_supply": 3.3,
+    "expected_current": 0.012,
+    "expected_output": 1.65,
+    "supported_symptoms": ["NO_POWER", "NO_OUTPUT", "INCORRECT_OUTPUT", "OUTPUT_TOO_HIGH", "OUTPUT_TOO_LOW", "UNSTABLE_OUTPUT", "OTHER"],
+    "applicable_faults": ["Normal", "PowerSupplyFault", "WiringFault", "VoltageLevelFault", "PolarityFault", "ConfigurationFault", "ComponentFailure", "SignalIntegrityFault"],
+    "available_measurements": ["SUPPLY_VOLTAGE", "EXPECTED_SUPPLY_VOLTAGE", "OUTPUT_VOLTAGE", "EXPECTED_OUTPUT_VOLTAGE", "CURRENT", "EXPECTED_CURRENT", "CONTINUITY", "POLARITY_OK", "SIGNAL_PRESENT", "ADC_READING", "EXPECTED_ADC_READING", "ADC_REFERENCE", "CONFIGURATION_OK", "NOISE_LEVEL"]
+  },
+  "I2C_SENSOR": {
+    "system_name": "I2C Sensor",
+    "description": "A digital sensor communicating over an I2C bus.",
+    "expected_supply": 3.3,
+    "expected_current": 0.008,
+    "expected_output": 3.3,
+    "supported_symptoms": ["NO_POWER", "DEVICE_NOT_DETECTED", "COMMUNICATION_FAILURE", "INTERMITTENT_COMMUNICATION", "INCORRECT_OUTPUT", "OTHER"],
+    "applicable_faults": ["Normal", "PowerSupplyFault", "WiringFault", "VoltageLevelFault", "PolarityFault", "ConfigurationFault", "CommunicationFault", "ComponentFailure", "SignalIntegrityFault"],
+    "available_measurements": ["SUPPLY_VOLTAGE", "EXPECTED_SUPPLY_VOLTAGE", "CURRENT", "EXPECTED_CURRENT", "CONTINUITY", "POLARITY_OK", "LOGIC_LEVEL", "EXPECTED_LOGIC_LEVEL", "PULLUP_PRESENT", "SDA_STATE", "SCL_STATE", "ACK_RECEIVED", "ADDRESS_CORRECT", "CONFIGURATION_OK", "COMMUNICATION_SUCCESS", "NOISE_LEVEL"]
+  },
+  "UART_DEVICE": {
+    "system_name": "UART Device",
+    "description": "A serial peripheral using TX and RX lines.",
+    "expected_supply": 3.3,
+    "expected_current": 0.014,
+    "expected_output": 3.3,
+    "supported_symptoms": ["NO_POWER", "NO_RESPONSE", "COMMUNICATION_FAILURE", "INTERMITTENT_COMMUNICATION", "INCORRECT_OUTPUT", "OTHER"],
+    "applicable_faults": ["Normal", "PowerSupplyFault", "WiringFault", "VoltageLevelFault", "PolarityFault", "ConfigurationFault", "CommunicationFault", "ComponentFailure", "SignalIntegrityFault"],
+    "available_measurements": ["SUPPLY_VOLTAGE", "EXPECTED_SUPPLY_VOLTAGE", "CURRENT", "EXPECTED_CURRENT", "CONTINUITY", "POLARITY_OK", "LOGIC_LEVEL", "EXPECTED_LOGIC_LEVEL", "TX_SIGNAL_PRESENT", "RX_SIGNAL_PRESENT", "BAUD_RATE_CORRECT", "ACTUAL_BAUD", "EXPECTED_BAUD", "CONFIGURATION_OK", "COMMUNICATION_SUCCESS", "NOISE_LEVEL"]
+  },
+  "PWM_MOTOR_SERVO": {
+    "system_name": "PWM Motor / Servo",
+    "description": "A motor or servo driven by a PWM control signal.",
+    "expected_supply": 5.0,
+    "expected_current": 0.25,
+    "expected_output": 5.0,
+    "supported_symptoms": ["NO_POWER", "NO_RESPONSE", "INCORRECT_SPEED", "INCORRECT_POSITION", "UNSTABLE_OUTPUT", "OTHER"],
+    "applicable_faults": ["Normal", "PowerSupplyFault", "WiringFault", "VoltageLevelFault", "PolarityFault", "ConfigurationFault", "ComponentFailure", "SignalIntegrityFault"],
+    "available_measurements": ["SUPPLY_VOLTAGE", "EXPECTED_SUPPLY_VOLTAGE", "OUTPUT_VOLTAGE", "EXPECTED_OUTPUT_VOLTAGE", "CURRENT", "EXPECTED_CURRENT", "CONTINUITY", "POLARITY_OK", "PWM_PRESENT", "DUTY_CYCLE", "EXPECTED_DUTY_CYCLE", "CONFIGURATION_OK", "NOISE_LEVEL"]
+  }
+}

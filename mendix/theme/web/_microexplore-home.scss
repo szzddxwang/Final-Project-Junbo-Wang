@@ -1,0 +1,136 @@
+/* Native Home: photo-led tutorial and project index, 2026-11-01.
+   All rules are page-scoped. Original images/credits are retained. */
+.mx-main-site.mx-editorial-page {
+  max-width:1380px; padding:20px clamp(16px,2.7vw,34px) 40px;
+  background:#fff; color:#252a30; height:auto!important; min-height:100%!important; flex:0 0 auto!important;
+}
+.mx-home-editorial {
+  --home-text:#252a30; --home-muted:#65717b; --home-link:#245b88;
+  font-family:Arial,"Segoe UI",sans-serif; min-width:0; background:#fff;
+  h1,h2,h3,p {font-family:inherit;}
+  h1 {font-size:28px!important;line-height:1.25;letter-spacing:-.4px;margin:0 0 8px;color:var(--home-text);}
+  h2 {font-size:20px!important;line-height:1.35;letter-spacing:0;margin:0;color:var(--home-text);}
+  p {font-size:14px;line-height:1.6;color:var(--home-muted);margin:0;}
+  a,button {font-family:inherit;}
+  .home-editorial-header {display:flex;gap:20px;justify-content:space-between;align-items:center;padding:4px 0 23px;border-bottom:1px solid #e7ebee;margin-bottom:24px;}
+  .home-start-link,.home-text-link {color:var(--home-link);background:transparent;border:0;padding:0;min-height:0;box-shadow:none;border-radius:0;font-size:14px;font-weight:600;text-align:left;white-space:normal;text-decoration:none;}
+  .home-start-link:hover,.home-text-link:hover {color:#153d60;background:transparent;text-decoration:underline;}
+  .home-start-link:focus-visible,.home-text-link:focus-visible,.home-story-title:focus-visible {outline:2px solid #245b88;outline-offset:4px;}
+  .home-top-stories {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:25px;align-items:start;}
+  .mx-listview {margin:0;background:transparent;}
+  .mx-listview > ul {list-style:none;margin:0;padding:0;}
+  .mx-listview > ul > li {background:transparent!important;border:0!important;padding:0!important;min-width:0;width:auto!important;}
+  .mx-listview .mx-listview-searchbar,.mx-listview .mx-listview-loadMore {display:none;}
+  .home-featured-list > ul {display:block!important;}
+  .home-featured-build {min-width:0;}
+  .home-photo {position:relative;width:100%;background-color:#fff;background-repeat:no-repeat;background-position:center;background-size:cover;border-radius:5px;overflow:hidden;cursor:pointer;}
+  .home-photo-credit {position:absolute;bottom:0;left:0;right:0;padding:5px 8px!important;background:rgba(18,25,31,.83);color:#fff!important;font-size:10px!important;line-height:1.3!important;margin:0!important;}
+  .home-photo-midi {aspect-ratio:4 / 3;background-image:url('/img/learning/pico-midi-controller-ruiz-brothers.jpg');}
+  .home-featured-copy {padding:13px 0 0;}
+  .home-content-label {font-size:10px!important;font-weight:700;letter-spacing:.7px;color:#536673!important;margin-bottom:6px!important;}
+  .home-story-title {display:block;text-align:left;white-space:normal;background:transparent!important;border:0!important;padding:0!important;min-height:0!important;height:auto!important;box-shadow:none!important;color:var(--home-text)!important;font-size:16px!important;line-height:1.45!important;font-weight:600;text-decoration:none;letter-spacing:0!important;}
+  .home-story-title:hover {color:var(--home-link)!important;text-decoration:underline;}
+  .home-featured-copy .home-story-title {font-size:23px!important;line-height:1.35!important;max-width:560px;}
+  .home-featured-summary {margin-top:8px!important;max-width:570px;}
+  .home-content-meta {font-size:12px!important;line-height:1.5!important;margin-top:7px!important;color:var(--home-muted)!important;}
+  .home-guide-grid > ul {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px;}
+  .home-guide-photo {aspect-ratio:16 / 10;background-size:contain;background-color:#fff;margin-bottom:9px;}
+  .home-guide-adc .home-guide-photo {background-image:url('/img/learning/1eca8f5f15bcc0ad86.jpg');}
+  .home-guide-power .home-guide-photo {background-image:url('/img/learning/8949c2111043a67c05.jpg');}
+  .home-guide-pwm .home-guide-photo {background-image:url('/img/learning/2cc0f074e33c6655d2.png');}
+  .home-guide-troubleshooting .home-guide-photo {background-image:url('/img/learning/cdfaad7416e580bcbb.jpg');background-size:contain;}
+  .home-guide-photo .home-photo-credit {font-size:9px!important;padding:3px 5px!important;}
+  .home-lower-grid {display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:30px;margin-top:34px;padding-top:25px;border-top:1px solid #e7ebee;align-items:start;}
+  .home-section-head {display:flex;gap:14px;justify-content:space-between;align-items:baseline;margin-bottom:17px;}
+  .home-section-head .home-text-link {font-size:12px;white-space:nowrap;font-weight:400;}
+  .home-project-grid > ul {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+  .home-build-photo {aspect-ratio:16 / 10;margin-bottom:10px;background-size:cover;}
+  .home-build-led .home-build-photo {background-image:url('/img/learning/436904b5af2b3f7e31.jpg');}
+  .home-build-servo .home-build-photo {background-image:url('/img/learning/a0df25d7d420a9d1e2.jpg');background-size:contain;background-color:#fff;}
+  .home-card-summary {font-size:13px!important;margin-top:9px!important;}
+  .home-reading-sidebar {border-left:1px solid #e7ebee;padding-left:25px;min-width:0;}
+  .home-reading-sidebar .home-section-head {align-items:start;}
+  .home-reading-sidebar .home-story-title {font-size:14px!important;}
+  .home-course-item {padding:0 0 15px;margin-bottom:15px;border-bottom:1px solid #edf0f2;}
+  .home-useful-heading {margin:8px 0 15px!important;}
+  .home-useful-links .home-text-link {font-size:14px;}
+  .home-link-description {font-size:12px!important;margin:3px 0 15px!important;}
+  .home-editorial-footer {margin-top:28px;border-top:1px solid #e7ebee;padding-top:19px;}
+  .home-tools-strip {display:flex;justify-content:space-between;gap:15px;align-items:center;}
+  .home-tools-strip h2 {font-size:17px!important;}
+  .home-tool-links {display:flex;gap:20px;flex-wrap:wrap;}
+  .home-tool-links .btn {background:transparent!important;border:0!important;padding:0!important;min-height:0!important;color:var(--home-link)!important;border-radius:0;font-size:13px;}
+  .home-image-attribution {font-size:10px!important;line-height:1.6!important;margin:18px 0 5px!important;max-width:1000px;}
+  .home-license-links {display:flex;gap:18px;flex-wrap:wrap;}
+  .home-license-links .home-text-link {font-size:10px;font-weight:400;}
+}
+.mx-name-projectDetailDataView .mx-name-projectInstructions {white-space:pre-line;line-height:1.8;max-width:85ch;overflow-wrap:anywhere;}
+.mx-name-projectDetailDataView .mx-project-source-link {margin:14px 10px 0 0;white-space:normal;}
+@media(max-width:900px){
+ .mx-home-editorial .home-top-stories {grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;}
+ .mx-home-editorial .home-guide-grid > ul {gap:17px 13px;}
+ .mx-home-editorial .home-guide-grid .home-story-title {font-size:14px!important;}
+ .mx-home-editorial .home-guide-photo .home-photo-credit {font-size:8px!important;}
+ .mx-home-editorial .home-lower-grid {grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:22px;}
+ .mx-home-editorial .home-reading-sidebar {padding-left:18px;}
+ .mx-home-editorial .home-section-head {flex-wrap:wrap;gap:7px;}
+}
+@media(max-width:650px){
+ .mx-main-site.mx-editorial-page {padding-top:16px;}
+ .mx-home-editorial h1 {font-size:24px!important;letter-spacing:-.2px;}
+ .mx-home-editorial .home-editorial-header {display:block;padding-bottom:16px;margin-bottom:18px;}
+ .mx-home-editorial .home-editorial-header p {font-size:13px;}
+ .mx-home-editorial .home-start-link {display:inline-block;margin-top:10px;font-size:13px;}
+ .mx-home-editorial .home-top-stories,.mx-home-editorial .home-lower-grid {grid-template-columns:minmax(0,1fr);}
+ .mx-home-editorial .home-photo-midi {aspect-ratio:4 / 3;}
+ .mx-home-editorial .home-featured-copy .home-story-title {font-size:20px!important;}
+ .mx-home-editorial .home-featured-summary {font-size:13px;}
+ .mx-home-editorial .home-guide-grid > ul {gap:20px 14px;margin-top:7px;}
+ .mx-home-editorial .home-guide-photo {aspect-ratio:4 / 3;}
+ .mx-home-editorial .home-guide-photo .home-photo-credit {font-size:8px!important;}
+ .mx-home-editorial .home-lower-grid {margin-top:25px;padding-top:20px;}
+ .mx-home-editorial .home-reading-sidebar {border-left:0;border-top:1px solid #e7ebee;padding:20px 0 0;}
+ .mx-home-editorial .home-tools-strip {display:block;}
+ .mx-home-editorial .home-tool-links {gap:13px;margin-top:12px;}
+ .mx-home-editorial .home-photo-credit {font-size:9px!important;}
+}
+@media(max-width:370px){
+ .mx-home-editorial .home-project-grid > ul {grid-template-columns:minmax(0,1fr);}
+ .mx-home-editorial .home-guide-grid > ul {gap:18px 10px;}
+ .mx-home-editorial .home-guide-grid .home-story-title {font-size:13px!important;}
+ .mx-home-editorial .home-guide-grid .home-content-meta {font-size:10px!important;}
+}
+
+/* The Atlas fixed-height grid previously exposed the body background below one screen. */
+.mx-scrollcontainer-middle.region-content:has(.mx-editorial-page) {background:#fff;}
+
+/* New public microelectronics source cards; scoped to the Home showcase only. */
+.mx-home-editorial .home-top-stories.home-industry-showcase {
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:22px; align-items:start;
+}
+.mx-home-editorial .home-industry-showcase > * {min-width:0;}
+.mx-home-editorial .home-industry-showcase .home-industry-adc > ul {
+  display:block!important; margin:0!important;
+}
+.mx-home-editorial .home-industry-showcase .home-guide-photo {
+  aspect-ratio:4 / 3; background-size:contain; background-position:center;
+}
+.mx-home-editorial .home-industry-fabrication .home-guide-photo {
+  background-image:url('/img/learning/industry_pecvd.png');
+}
+.mx-home-editorial .home-industry-packaging .home-guide-photo {
+  background-image:url('/img/learning/industry_photonic_packaging.jpg');
+  background-size:180%; background-position:73% 27%;
+}
+.mx-home-editorial .home-industry-inspection .home-guide-photo {
+  background-image:url('/img/learning/industry_ic_inspection.png');
+}
+.mx-home-editorial .home-industry-showcase .home-story-title {font-size:16px!important;}
+@media(max-width:900px) {
+  .mx-home-editorial .home-top-stories.home-industry-showcase {grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+}
+@media(max-width:420px) {
+  .mx-home-editorial .home-top-stories.home-industry-showcase {grid-template-columns:minmax(0,1fr)!important;}
+}

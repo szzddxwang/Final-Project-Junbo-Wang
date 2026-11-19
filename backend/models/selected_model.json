@@ -1,0 +1,53 @@
+{
+  "model": "xgboost",
+  "artifact": "models/release_20261116_observed_roots_v15/six_system_4dc89df0adbc.joblib",
+  "model_version": "stable-xgboost-reliability-v15-4dc89df0adbc",
+  "feature_version": "observed-quality-features-v5-1",
+  "runtime_uses_previous_models": true,
+  "paired_feature_count": 484,
+  "single_raw_features": 35,
+  "previous_models": [],
+  "measurement_reference": {
+    "path": "models/release_20261116_reliability/measurement_reference.csv",
+    "sha256": "3202c36952220038e3e168beb46a9ddf38ecdac33ccd462b31addcdc9eb235bb",
+    "rows": 14400,
+    "training_groups_added": 5760
+  },
+  "acceptance_feature_version": "observed-acceptance-v6-1",
+  "acceptance_feature_count": 562,
+  "upgraded_acceptance_systems": [
+    "DIGITAL_INPUT",
+    "PWM_MOTOR_SERVO"
+  ],
+  "preserved_acceptance_systems": [
+    "LED_GPIO",
+    "ANALOG_ADC",
+    "I2C_SENSOR",
+    "UART_DEVICE"
+  ],
+  "acceptance_policy_version": "normal-confirmation-v9",
+  "composition_feature_version": "observed-composition-v10-2",
+  "composition_feature_count": 602,
+  "composition_upgraded_systems": [
+    "ANALOG_ADC",
+    "DIGITAL_INPUT",
+    "I2C_SENSOR",
+    "LED_GPIO",
+    "PWM_MOTOR_SERVO",
+    "UART_DEVICE"
+  ],
+  "composition_preserved_systems": [],
+  "readback_revision": "observed-configuration-presence-r3",
+  "root_feature_count": 677,
+  "root_upgraded_systems": [
+    "ANALOG_ADC",
+    "DIGITAL_INPUT",
+    "I2C_SENSOR",
+    "LED_GPIO",
+    "PWM_MOTOR_SERVO",
+    "UART_DEVICE"
+  ],
+  "capture_budget": 4,
+  "acceptance_reference_model": "stable-xgboost-reliability-v10-4555b616db21",
+  "public_release_note": "Current V15 only. Prior estimators required internally are embedded in this exact artifact. No legacy session versions are exposed in this fresh installation."
+}

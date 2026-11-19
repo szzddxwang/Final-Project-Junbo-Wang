@@ -1,0 +1,42 @@
+[
+  {
+    "file": "micropython.uf2",
+    "url": "https://micropython.org/resources/firmware/RPI_PICO-20230426-v1.20.0.uf2",
+    "sha256": "d9d97d8b495da476006125e73dc203a428ce7b6be27a5a76eda1dd85b2efe99d"
+  },
+  {
+    "file": "arduino-cli.tar.gz",
+    "url": "https://downloads.arduino.cc/arduino-cli/arduino-cli_1.2.2_Linux_64bit.tar.gz",
+    "sha256": "a5ad085d1b02fd4010df18b1bbf20453276efe6c6e2ac323baa0cac4e96a85b4"
+  },
+  {
+    "file": "arduino-core.tar.gz",
+    "url": "https://api.github.com/repos/arduino/ArduinoCore-avr/tarball/1.8.6",
+    "sha256": "2fc99766e434c5c708e49025b017a5d409fc18297caeea26d9d7ebfdc8272558"
+  },
+  {
+    "file": "pico-demo.ts",
+    "url": "https://raw.githubusercontent.com/wokwi/rp2040js/8693315df527adce8bf2bc315aeb4a1ca61c02a3/demo/micropython-run.ts",
+    "sha256": "d3666f9657d4ee41dca0fc4f79cf0f25f4e5c6127b6d310e3eb5b0d7af83799c"
+  },
+  {
+    "file": "bootrom.ts",
+    "url": "https://raw.githubusercontent.com/wokwi/rp2040js/8693315df527adce8bf2bc315aeb4a1ca61c02a3/demo/bootrom.ts",
+    "sha256": "99f8a1f813ce3aa9415884de3fb6c5b962d3c6fa0394b05413ad3c7b3c39ec62"
+  },
+  {
+    "file": "load-flash.ts",
+    "url": "https://raw.githubusercontent.com/wokwi/rp2040js/8693315df527adce8bf2bc315aeb4a1ca61c02a3/demo/load-flash.ts",
+    "sha256": "a79b5b25586b2b11bb8e6f4cffcebc415994dc80f35ad21aa1b8de5aac4735e2"
+  },
+  {
+    "file": "MICROPYTHON_LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/micropython/micropython/v1.20.0/LICENSE",
+    "sha256": "0169213eb37d4736e41479787c589008f6b59e51c76132ba5591a089363e4ac2"
+  },
+  {
+    "file": "RP2040_BOOTROM_LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/raspberrypi/pico-bootrom/master/LICENSE.TXT",
+    "sha256": "69f1e3f7bd45c28982b321076f6065bc6a37eaafeaf3b0c241611cec8a932555"
+  }
+]

@@ -1,0 +1,66 @@
+@import '../../../theme/web/custom-variables';
+
+
+// Midterm experimental inference: readable returned reports on native pages.
+.mx-ai-experiment-panel { margin-top: 24px; padding: 20px; border: 1px solid #bacbde; border-radius: 12px; background: #f7faff; }
+.mx-ai-experiment-report { white-space: pre-line; overflow-wrap: anywhere; line-height: 1.65; max-width: 100%; padding: 16px; background: #f7faff; border-radius: 8px; }
+.mx-ai-experiment-report:empty { display: none; }
+
+// Reliability round: native typed result cards. All rules are scoped to AI views.
+// Compact round: filtering is driven by typed execution/metric flags.
+.mx-ai-v3 { margin: 14px auto; }
+.mx-ai-v3-summary { padding: 16px 18px; background: #f3f8f7; border-left: 3px solid #387c72; border-radius: 7px; }
+.mx-ai-v3-summary h3, .mx-ai-v3-summary h4 { margin: 0 0 7px; }
+.mx-ai-v3-summary p { margin-bottom: 6px; }
+.mx-ai-v3 .mx-ai-v2-next { margin-top: 10px; padding-top: 10px; }
+.mx-ai-execution-row { display: grid; grid-template-columns: minmax(130px,1fr) 90px minmax(180px,2fr) 100px; gap: 12px; align-items: start; }
+.mx-ai-v3-model-list > ul > li { padding: 11px 0 !important; border-bottom: 1px solid #dbe3e9 !important; }
+.mx-ai-executed-list > ul > li:has(.mx-ai-not-run-row), .mx-ai-other-list > ul > li:has(.mx-ai-executed-row), .mx-ai-primary-metrics > ul > li:has(.mx-ai-secondary-row) { display: none !important; }
+.mx-ai-execution-row .mx-ai-v2-details { margin: 0; }
+.mx-ai-execution-row .mx-groupbox-header { padding: 6px 9px; font-size: 13px; }
+.mx-ai-execution-row p { margin: 0 0 5px; }
+.mx-ai-method { font-weight: 650; }
+.mx-ai-v3-main-chart { max-width: 760px; margin: 16px 0; }
+.mx-ai-v3-missing { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; padding: 9px 12px; background: #f5f7fa; border-radius: 6px; }
+.mx-ai-v3-missing p { margin: 0; }
+@media (max-width: 700px) {
+ .mx-ai-execution-row { grid-template-columns: minmax(0,1fr) 90px; gap: 6px 10px; }
+ .mx-ai-result-cell { grid-column: 1 / -1; }
+ .mx-ai-execution-row > .mx-ai-v2-details { grid-column: 1 / -1; }
+ .mx-ai-v3-summary { padding: 12px; }
+ .mx-ai-v3 .mx-groupbox, .mx-ai-v3 .mx-groupbox-body { min-width: 0; max-width: 100%; }
+}
+.mx-ai-v2 { max-width: 1120px; margin: 20px auto; color: #20354a; }
+.mx-ai-v2 .mx-dataview-content, .mx-ai-v2-card, .mx-ai-v2-columns > * { min-width: 0; }
+.mx-ai-v2-summary { padding: 24px; border-left: 4px solid #387c72; background: #f3f8f7; border-radius: 8px; }
+.mx-ai-v2-summary h2 { margin: 4px 0 14px; }
+.mx-ai-v2-verdict { font-size: 27px; margin: 8px 0; }
+.mx-ai-v2-eyebrow, .mx-ai-v2-muted { color: #536b7c; font-size: 13px; line-height: 1.5; }
+.mx-ai-v2-eyebrow { margin-bottom: 5px; font-weight: 600; }
+.mx-ai-v2-next { margin: 16px 0 0; padding-top: 14px; border-top: 1px solid #c7dbd7; font-weight: 600; }
+.mx-ai-v2-card { margin: 16px 0; padding: 20px; border: 1px solid #dbe3e9; border-radius: 10px; background: white; }
+.mx-ai-v2-card > h3 { font-size: 18px; margin: 0 0 16px; }
+.mx-ai-v2-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px; }
+.mx-ai-v2-chart { width: 100%; max-width: 100%; overflow: hidden; }
+.mx-ai-v2-metrics > ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 12px; margin: 16px 0; }
+.mx-ai-v2-metrics > ul > li { border: 1px solid #dbe3e9 !important; border-radius: 8px; padding: 16px !important; background: white; min-width: 0; }
+.mx-ai-v2-metrics h4 { font-size: 23px; font-variant-numeric: tabular-nums; margin: 5px 0; }
+.mx-ai-v2-list > ul > li { padding: 14px 0 !important; border-bottom: 1px solid #e3e9ee !important; background: transparent; }
+.mx-ai-v2-list h4 { margin: 0 0 7px; font-size: 16px; }
+.mx-ai-v2-state { color: #315f83; font-size: 13px; font-weight: 700; }
+.mx-ai-v2-details { margin: 14px 0; border: 1px solid #dbe3e9; border-radius: 8px; background: white; }
+.mx-ai-v2-details .mx-groupbox-header { padding: 14px 16px; font-size: 15px; background: #f6f8fa; color: #20354a; }
+.mx-ai-v2-details .mx-groupbox-body { padding: 16px; }
+.mx-ai-v2-raw { max-height: 420px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.5; padding: 12px; background: #f5f7f9; }
+.mx-ai-v2-stale { padding: 14px 18px; border: 1px solid #c8a14f; border-radius: 8px; color: #704f08; background: #fff9e9; }
+.mx-ai-v2 p { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .mx-ai-page .mx-ai-action-row .btn { white-space: normal; overflow-wrap: anywhere; height: auto; min-height: 40px; max-width: 100%; }
+  .mx-ai-v2-summary, .mx-ai-v2-card { padding: 14px; }
+  .mx-ai-v2-columns { display: block; }
+  .mx-ai-v2-metrics > ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mx-ai-v2-metrics > ul > li { padding: 10px !important; }
+  .mx-ai-v2-metrics h4 { font-size: 19px; }
+  .mx-ai-v2-verdict { font-size: 23px; }
+  .mx-ai-experiment-panel { padding: 12px; }
+}

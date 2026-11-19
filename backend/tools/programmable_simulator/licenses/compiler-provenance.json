@@ -1,0 +1,44 @@
+[
+  {
+    "package": "arduino",
+    "name": "avr-gcc",
+    "version": "7.3.0-atmel3.6.1-arduino7",
+    "url": "https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-x86_64-pc-linux-gnu.tar.bz2",
+    "sha256": "bd8c37f6952a2130ac9ee32c53f6a660feb79bee8353c8e289eb60fdcefed91e"
+  },
+  {
+    "package": "builtin",
+    "name": "ctags",
+    "version": "5.8-arduino11",
+    "url": "https://downloads.arduino.cc/tools/ctags-5.8-arduino11-pm-x86_64-pc-linux-gnu.tar.bz2",
+    "sha256": "62b514f3aaf37b5429ef703853bb46365fb91b4754c1916d085bf134004886e3"
+  },
+  {
+    "package": "builtin",
+    "name": "serial-discovery",
+    "version": "1.5.2",
+    "url": "https://downloads.arduino.cc/discovery/serial-discovery/serial-discovery_v1.5.2_Linux_64bit.tar.gz",
+    "sha256": "7a95d7386c66c0846fe4aa96b601e72783ae64f541eb2f5edb4fc9e69a04b6d3"
+  },
+  {
+    "package": "builtin",
+    "name": "mdns-discovery",
+    "version": "1.1.0",
+    "url": "https://downloads.arduino.cc/discovery/mdns-discovery/mdns-discovery_v1.1.0_Linux_64bit.tar.gz",
+    "sha256": "6966f406e5b6e80d82a388706d6d9d8a63d46035d19d1e6b4fb1ebeaf7fea056"
+  },
+  {
+    "package": "builtin",
+    "name": "serial-monitor",
+    "version": "0.15.0",
+    "url": "https://downloads.arduino.cc/monitor/serial-monitor/serial-monitor_v0.15.0_Linux_64bit.tar.gz",
+    "sha256": "f1bc9680f2cff08688bc4ccbaf5e9be4ce38aa3f10d40a487a7704c04006f19b"
+  },
+  {
+    "package": "builtin",
+    "name": "dfu-discovery",
+    "version": "0.1.2",
+    "url": "https://downloads.arduino.cc/discovery/dfu-discovery/dfu-discovery_v0.1.2_Linux_64bit.tar.gz",
+    "sha256": "d82649741fd6cbe369d7fe22d290efd7e28e4d6fd0b81b7b1eabff43b495b5f8"
+  }
+]

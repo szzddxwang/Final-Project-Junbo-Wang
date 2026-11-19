@@ -1,0 +1,388 @@
+{
+  "SUPPLY_VOLTAGE": {
+    "measurement_code": "SUPPLY_VOLTAGE",
+    "display_name": "Supply voltage",
+    "input_type": "numeric",
+    "unit": "V",
+    "description": "Measure the device supply voltage.",
+    "question": "Measure the device supply voltage.",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "EXPECTED_SUPPLY_VOLTAGE": {
+    "measurement_code": "EXPECTED_SUPPLY_VOLTAGE",
+    "display_name": "Expected supply voltage",
+    "input_type": "numeric",
+    "unit": "V",
+    "description": "What supply voltage is expected?",
+    "question": "What supply voltage is expected?",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "OUTPUT_VOLTAGE": {
+    "measurement_code": "OUTPUT_VOLTAGE",
+    "display_name": "Output voltage",
+    "input_type": "numeric",
+    "unit": "V",
+    "description": "Measure the output voltage.",
+    "question": "Measure the output voltage.",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "EXPECTED_OUTPUT_VOLTAGE": {
+    "measurement_code": "EXPECTED_OUTPUT_VOLTAGE",
+    "display_name": "Expected output voltage",
+    "input_type": "numeric",
+    "unit": "V",
+    "description": "What output voltage is expected?",
+    "question": "What output voltage is expected?",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "CURRENT": {
+    "measurement_code": "CURRENT",
+    "display_name": "Current",
+    "input_type": "numeric",
+    "unit": "A",
+    "description": "Measure the operating current.",
+    "question": "Measure the operating current.",
+    "supported_systems": [
+      "LED_GPIO",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "EXPECTED_CURRENT": {
+    "measurement_code": "EXPECTED_CURRENT",
+    "display_name": "Expected current",
+    "input_type": "numeric",
+    "unit": "A",
+    "description": "What operating current is expected?",
+    "question": "What operating current is expected?",
+    "supported_systems": [
+      "LED_GPIO",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "CONTINUITY": {
+    "measurement_code": "CONTINUITY",
+    "display_name": "Continuity",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is the relevant signal path continuous?",
+    "question": "Is the relevant signal path continuous?",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "POLARITY_OK": {
+    "measurement_code": "POLARITY_OK",
+    "display_name": "Polarity correct",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is the power or signal polarity correct?",
+    "question": "Is the power or signal polarity correct?",
+    "supported_systems": [
+      "LED_GPIO",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "LOGIC_LEVEL": {
+    "measurement_code": "LOGIC_LEVEL",
+    "display_name": "Logic level",
+    "input_type": "numeric",
+    "unit": "V",
+    "description": "Measure the digital logic-high level.",
+    "question": "Measure the digital logic-high level.",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "I2C_SENSOR",
+      "UART_DEVICE"
+    ]
+  },
+  "EXPECTED_LOGIC_LEVEL": {
+    "measurement_code": "EXPECTED_LOGIC_LEVEL",
+    "display_name": "Expected logic level",
+    "input_type": "numeric",
+    "unit": "V",
+    "description": "What logic-high level is expected?",
+    "question": "What logic-high level is expected?",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "I2C_SENSOR",
+      "UART_DEVICE"
+    ]
+  },
+  "SIGNAL_PRESENT": {
+    "measurement_code": "SIGNAL_PRESENT",
+    "display_name": "Signal present",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is the expected signal present?",
+    "question": "Is the expected signal present?",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC"
+    ]
+  },
+  "ADC_READING": {
+    "measurement_code": "ADC_READING",
+    "display_name": "ADC reading",
+    "input_type": "numeric",
+    "unit": "count",
+    "description": "What ADC count is measured?",
+    "question": "What ADC count is measured?",
+    "supported_systems": [
+      "ANALOG_ADC"
+    ]
+  },
+  "EXPECTED_ADC_READING": {
+    "measurement_code": "EXPECTED_ADC_READING",
+    "display_name": "Expected ADC reading",
+    "input_type": "numeric",
+    "unit": "count",
+    "description": "What ADC count is expected?",
+    "question": "What ADC count is expected?",
+    "supported_systems": [
+      "ANALOG_ADC"
+    ]
+  },
+  "ADC_REFERENCE": {
+    "measurement_code": "ADC_REFERENCE",
+    "display_name": "ADC reference",
+    "input_type": "numeric",
+    "unit": "V",
+    "description": "What ADC reference voltage is used?",
+    "question": "What ADC reference voltage is used?",
+    "supported_systems": [
+      "ANALOG_ADC"
+    ]
+  },
+  "PULLUP_PRESENT": {
+    "measurement_code": "PULLUP_PRESENT",
+    "display_name": "Pull-up present",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is the required pull-up present?",
+    "question": "Is the required pull-up present?",
+    "supported_systems": [
+      "DIGITAL_INPUT",
+      "I2C_SENSOR"
+    ]
+  },
+  "SDA_STATE": {
+    "measurement_code": "SDA_STATE",
+    "display_name": "SDA state",
+    "input_type": "choice",
+    "unit": null,
+    "description": "What is the SDA line state?",
+    "question": "What is the SDA line state?",
+    "supported_systems": [
+      "I2C_SENSOR"
+    ],
+    "choices": [
+      "High",
+      "Low",
+      "Toggling"
+    ]
+  },
+  "SCL_STATE": {
+    "measurement_code": "SCL_STATE",
+    "display_name": "SCL state",
+    "input_type": "choice",
+    "unit": null,
+    "description": "What is the SCL line state?",
+    "question": "What is the SCL line state?",
+    "supported_systems": [
+      "I2C_SENSOR"
+    ],
+    "choices": [
+      "High",
+      "Low",
+      "Toggling"
+    ]
+  },
+  "ACK_RECEIVED": {
+    "measurement_code": "ACK_RECEIVED",
+    "display_name": "ACK received",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Does the device return an ACK?",
+    "question": "Does the device return an ACK?",
+    "supported_systems": [
+      "I2C_SENSOR"
+    ]
+  },
+  "ADDRESS_CORRECT": {
+    "measurement_code": "ADDRESS_CORRECT",
+    "display_name": "Address correct",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is the I2C address correct?",
+    "question": "Is the I2C address correct?",
+    "supported_systems": [
+      "I2C_SENSOR"
+    ]
+  },
+  "TX_SIGNAL_PRESENT": {
+    "measurement_code": "TX_SIGNAL_PRESENT",
+    "display_name": "TX signal present",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is activity present on TX?",
+    "question": "Is activity present on TX?",
+    "supported_systems": [
+      "UART_DEVICE"
+    ]
+  },
+  "RX_SIGNAL_PRESENT": {
+    "measurement_code": "RX_SIGNAL_PRESENT",
+    "display_name": "RX signal present",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is activity present on RX?",
+    "question": "Is activity present on RX?",
+    "supported_systems": [
+      "UART_DEVICE"
+    ]
+  },
+  "BAUD_RATE_CORRECT": {
+    "measurement_code": "BAUD_RATE_CORRECT",
+    "display_name": "Baud rate correct",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Do both UART ends use the same baud rate?",
+    "question": "Do both UART ends use the same baud rate?",
+    "supported_systems": [
+      "UART_DEVICE"
+    ]
+  },
+  "PWM_PRESENT": {
+    "measurement_code": "PWM_PRESENT",
+    "display_name": "PWM present",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Is the PWM signal present?",
+    "question": "Is the PWM signal present?",
+    "supported_systems": [
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "DUTY_CYCLE": {
+    "measurement_code": "DUTY_CYCLE",
+    "display_name": "Duty cycle",
+    "input_type": "numeric",
+    "unit": "%",
+    "description": "What duty cycle is measured?",
+    "question": "What duty cycle is measured?",
+    "supported_systems": [
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "EXPECTED_DUTY_CYCLE": {
+    "measurement_code": "EXPECTED_DUTY_CYCLE",
+    "display_name": "Expected duty cycle",
+    "input_type": "numeric",
+    "unit": "%",
+    "description": "What duty cycle is expected?",
+    "question": "What duty cycle is expected?",
+    "supported_systems": [
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "NOISE_LEVEL": {
+    "measurement_code": "NOISE_LEVEL",
+    "display_name": "Noise level",
+    "input_type": "numeric",
+    "unit": "relative",
+    "description": "How much relative signal noise is measured?",
+    "question": "How much relative signal noise is measured?",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  },
+  "ACTUAL_BAUD": {
+    "measurement_code": "ACTUAL_BAUD",
+    "display_name": "Configured baud rate",
+    "input_type": "numeric",
+    "unit": "baud",
+    "description": "What baud rate is configured on the device?",
+    "question": "Check the device baud rate setting.",
+    "supported_systems": ["UART_DEVICE"]
+  },
+  "EXPECTED_BAUD": {
+    "measurement_code": "EXPECTED_BAUD",
+    "display_name": "Expected baud rate",
+    "input_type": "numeric",
+    "unit": "baud",
+    "description": "What baud rate does the other end expect?",
+    "question": "Check the expected baud rate.",
+    "supported_systems": ["UART_DEVICE"]
+  },
+  "COMMUNICATION_SUCCESS": {
+    "measurement_code": "COMMUNICATION_SUCCESS",
+    "display_name": "Communication succeeds",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Does a known test exchange complete successfully?",
+    "question": "Does a known test exchange complete successfully?",
+    "supported_systems": ["I2C_SENSOR", "UART_DEVICE"]
+  },
+  "CONFIGURATION_OK": {
+    "measurement_code": "CONFIGURATION_OK",
+    "display_name": "Configuration correct",
+    "input_type": "boolean",
+    "unit": null,
+    "description": "Are the relevant settings correct?",
+    "question": "Are the relevant settings correct?",
+    "supported_systems": [
+      "LED_GPIO",
+      "DIGITAL_INPUT",
+      "ANALOG_ADC",
+      "I2C_SENSOR",
+      "UART_DEVICE",
+      "PWM_MOTOR_SERVO"
+    ]
+  }
+}

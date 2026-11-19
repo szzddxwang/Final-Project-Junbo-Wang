@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "title": "AI in Electronics",
+  "subtitle": "Explore how artificial intelligence supports electronic systems, design, manufacturing, sensing, diagnosis, simulation, and control.",
+  "categories": [
+    {"id":"circuit-design","title":"AI for Circuit Design / EDA","summary":"Search design spaces and examine circuit tradeoffs.","tags":["design","optimization"],"difficulty":"Overview","related_tool":null,"icon":"◇"},
+    {"id":"semiconductor","title":"Semiconductor Manufacturing","summary":"Study process variation, yield, and defect signals.","tags":["manufacturing","quality"],"difficulty":"Overview","related_tool":null,"icon":"▦"},
+    {"id":"vision","title":"Computer Vision Inspection","summary":"Explore visual inspection and component recognition.","tags":["vision","quality"],"difficulty":"Overview","related_tool":null,"icon":"◉"},
+    {"id":"edge-ai","title":"Embedded / Edge AI","summary":"Understand inference close to sensors and controllers.","tags":["embedded","control"],"difficulty":"Overview","related_tool":"/ai/lab#microcontroller","icon":"▣"},
+    {"id":"sensors","title":"Intelligent Sensors","summary":"Compare ideal sensor behavior with faults and anomaly scores.","tags":["sensing","anomaly"],"difficulty":"Interactive","related_tool":"/ai/lab#sensor","icon":"◌"},
+    {"id":"maintenance","title":"Predictive Maintenance","summary":"Relate measured symptoms to emerging faults.","tags":["diagnosis","reliability"],"difficulty":"Overview","related_tool":"/ai/lab#sensor","icon":"↗"},
+    {"id":"digital-twin","title":"Digital Twin & Simulation","summary":"Change a virtual ADC and compare predicted outcomes.","tags":["simulation","modeling"],"difficulty":"Interactive","related_tool":"/ai/lab#adc","icon":"▧"},
+    {"id":"troubleshooting","title":"AI Troubleshooting","summary":"Combine measurements, physics, and a diagnosis workflow.","tags":["diagnosis","learning"],"difficulty":"Interactive","related_tool":"/ai/lab#diagnosis","icon":"◎"},
+    {"id":"robotics","title":"Robotics & Control","summary":"Connect sensing, actuation, and feedback decisions.","tags":["control","embedded"],"difficulty":"Overview","related_tool":"/ai/lab#microcontroller","icon":"⌁"},
+    {"id":"power","title":"Power Electronics & Energy","summary":"Survey monitoring and control in converters and energy systems.","tags":["energy","control"],"difficulty":"Overview","related_tool":null,"icon":"ϟ"}
+  ]
+}

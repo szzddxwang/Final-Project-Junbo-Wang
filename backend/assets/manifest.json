@@ -1,0 +1,1055 @@
+{
+  "schema": "microexplore-runtime-assets-v1",
+  "current_diagnostic_model": "stable-xgboost-reliability-v15-4dc89df0adbc",
+  "files": [
+    {
+      "path": "models/release_20261116_observed_roots_v15/six_system_4dc89df0adbc.joblib",
+      "bytes": 271393247,
+      "sha256": "4dc89df0adbcc92eeab5b8440575b383a31ceb51a364d4801289224118ad92dc",
+      "gzip_bytes": 76243746,
+      "parts": [
+        {
+          "file": "4dc89df0adbcc92e.00.gzpart",
+          "bytes": 16777216,
+          "sha256": "043770b73e8a63e526314b48fff3a1abdff1e91f8c3f8aabc2e4db6e4dc03d20"
+        },
+        {
+          "file": "4dc89df0adbcc92e.01.gzpart",
+          "bytes": 16777216,
+          "sha256": "465cde6e17badc00a56dc40a3213268635fb38e0f85a7e7bff815a77fb528859"
+        },
+        {
+          "file": "4dc89df0adbcc92e.02.gzpart",
+          "bytes": 16777216,
+          "sha256": "b6c7c95c7783236b54c8d060a42710feed36e572fc8338730018dbf7ffd92dbe"
+        },
+        {
+          "file": "4dc89df0adbcc92e.03.gzpart",
+          "bytes": 16777216,
+          "sha256": "de6b363d705aa9912c31b7fb5d4f65293fa5858bf8c361d422423c310311bff2"
+        },
+        {
+          "file": "4dc89df0adbcc92e.04.gzpart",
+          "bytes": 9134882,
+          "sha256": "e30c9508fa4f8e29b2fab8cd51ab9971d167d1e1abaf3ee34a49716eba3d11a5"
+        }
+      ]
+    },
+    {
+      "path": "models/release_20261116_reliability/measurement_reference.csv",
+      "bytes": 4587110,
+      "sha256": "3202c36952220038e3e168beb46a9ddf38ecdac33ccd462b31addcdc9eb235bb",
+      "gzip_bytes": 1215420,
+      "parts": [
+        {
+          "file": "3202c36952220038.00.gzpart",
+          "bytes": 1215420,
+          "sha256": "d8b607d8cf29eb45c6052facec25d2a451f784cc4d7c03f2e88efc8bd31921bc"
+        }
+      ]
+    },
+    {
+      "path": "models/next_round/adc_raw_candidate.joblib",
+      "bytes": 1170182,
+      "sha256": "728fcf6b66818921586a7d32c29ccb19f6b5818eac32ef449185b1628a842a19",
+      "gzip_bytes": 430316,
+      "parts": [
+        {
+          "file": "728fcf6b66818921.00.gzpart",
+          "bytes": 430316,
+          "sha256": "e288acc20c398736f08231b9814acc47068e22426ad2d4cecfd563e9913a02a5"
+        }
+      ]
+    },
+    {
+      "path": "models/next_round/adc_raw_selection.json",
+      "bytes": 212,
+      "sha256": "f7120fadb7ac3f00e9c5bb81949b0dabf7c806d9ad45fd46a21be637fa432440",
+      "gzip_bytes": 158,
+      "parts": [
+        {
+          "file": "f7120fadb7ac3f00.00.gzpart",
+          "bytes": 158,
+          "sha256": "6522fdfc1cf3270ec933f7cd4fd514a8cc6c3e570ef1723e33f52155a5391070"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/closure_bandit.joblib",
+      "bytes": 84422,
+      "sha256": "79ec810e0e13f77e74dc557c268a971bb8c4dedbef2a18676e810cbdd819840e",
+      "gzip_bytes": 26375,
+      "parts": [
+        {
+          "file": "79ec810e0e13f77e.00.gzpart",
+          "bytes": 26375,
+          "sha256": "daa5c24eba8f375b5cf5aebb6bf452f6ec8c48a7f4b0139b60794d62fe28b637"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/closure_expert_weights.json",
+      "bytes": 1215,
+      "sha256": "b530e44a3f2751c1149b86a10545ec7bfe23ff69859993b2fc80ac7ea7e284b0",
+      "gzip_bytes": 512,
+      "parts": [
+        {
+          "file": "b530e44a3f2751c1.00.gzpart",
+          "bytes": 512,
+          "sha256": "044d7a3a56a0982de4b7b6dcdaaa32810d7eaecd102075e5cdb8576f876af1e1"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/closure_system_experts.joblib",
+      "bytes": 17028554,
+      "sha256": "1d86e736fb76cf4799289540593248614bb95a30194c317ae642ab51920bcbd7",
+      "gzip_bytes": 6564645,
+      "parts": [
+        {
+          "file": "1d86e736fb76cf47.00.gzpart",
+          "bytes": 6564645,
+          "sha256": "8e4b1a6aaafc9a6c2a47a9e37925247c3bec6eacede01da298f674a7fdbe6418"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/sensor_isolation.joblib",
+      "bytes": 1615813,
+      "sha256": "6549866f639347cf6d0088e302e0ac1093dfd516ff6a14efd71dcf196a692292",
+      "gzip_bytes": 405758,
+      "parts": [
+        {
+          "file": "6549866f639347cf.00.gzpart",
+          "bytes": 405758,
+          "sha256": "23c6371176279b6bdc245e93d0f1a44b4fc2dbb542ac6f3c353cdf7bb295fea2"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/expert_i2c_sensor.joblib",
+      "bytes": 6151138,
+      "sha256": "4c3a3ce8996cbacb7625c5d83d3a87646ae4f2597082cba39a7684fe5bb11675",
+      "gzip_bytes": 2701322,
+      "parts": [
+        {
+          "file": "4c3a3ce8996cbacb.00.gzpart",
+          "bytes": 2701322,
+          "sha256": "6675692a05a3787c4ca393075a22e1536b8672843eb448e50accb98af3990b12"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/expert_led_gpio.joblib",
+      "bytes": 5646810,
+      "sha256": "dca27b76d66b1d980391e9a9e7da55e320c0752831e45f26e42349193c19a494",
+      "gzip_bytes": 2521534,
+      "parts": [
+        {
+          "file": "dca27b76d66b1d98.00.gzpart",
+          "bytes": 2521534,
+          "sha256": "cbeaf938591633a51817add3da390856e693e92c1436431f628fccc1815c9227"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/expert_manifest.json",
+      "bytes": 2574,
+      "sha256": "51afe45aeed776a4257c23dba273052d74f3924b0bf4d21b8ebf2f0d1d7ebef2",
+      "gzip_bytes": 701,
+      "parts": [
+        {
+          "file": "51afe45aeed776a4.00.gzpart",
+          "bytes": 701,
+          "sha256": "2515abf524391409b1ac643c26188a81c5b5e62c53ace630f60bd84195a66618"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/expert_pwm_motor_servo.joblib",
+      "bytes": 1786705,
+      "sha256": "d2348deaf218cce28eb00f41fe0ea66992049e5d65e7972118a3361543c67c00",
+      "gzip_bytes": 610358,
+      "parts": [
+        {
+          "file": "d2348deaf218cce2.00.gzpart",
+          "bytes": 610358,
+          "sha256": "9bf3c52d8196bfe48cd5ec1ec1bbceea5632d0543b8038d85dfd8444b75eee77"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/expert_uart_device.joblib",
+      "bytes": 1997569,
+      "sha256": "42f33c3d83820288a13be52450dcbce49cc53fd0ea8fba2879f553589072c11a",
+      "gzip_bytes": 690202,
+      "parts": [
+        {
+          "file": "42f33c3d83820288.00.gzpart",
+          "bytes": 690202,
+          "sha256": "0ba238e6699b0e322c4251c5a89f9511a02efd9077cbf4ed0635544eb47dd969"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/ood_mechanistic.joblib",
+      "bytes": 8630,
+      "sha256": "91e264b9d625bd6659c5d16ae3bfbdceddd920342c6f3c182a07c4e81dc1c189",
+      "gzip_bytes": 5229,
+      "parts": [
+        {
+          "file": "91e264b9d625bd66.00.gzpart",
+          "bytes": 5229,
+          "sha256": "88bc3049d4a74a70a183013bcaecdd2b03880478fe8b9382676eb6850034e738"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/paired_analog_adc.joblib",
+      "bytes": 3576629,
+      "sha256": "36f084f48e84159b2016a01fe3c4be7bb88d48550bb1ffb137838d4895a32b73",
+      "gzip_bytes": 632093,
+      "parts": [
+        {
+          "file": "36f084f48e84159b.00.gzpart",
+          "bytes": 632093,
+          "sha256": "8161f794763b740ae6a41351fc412b3964fd743306c3375ddf92646fee46ade0"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/paired_digital_input.joblib",
+      "bytes": 2861765,
+      "sha256": "08ad8cd54dd9ec8eed02794c4d3a9a76c559cc3671c063f7769f1c4e01d8a33a",
+      "gzip_bytes": 518574,
+      "parts": [
+        {
+          "file": "08ad8cd54dd9ec8e.00.gzpart",
+          "bytes": 518574,
+          "sha256": "af1f46efb5ce05fb0024b59ef1001f2aa3b141f76d71f066ebeb1b3fc4dcdc8c"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/paired_i2c_sensor.joblib",
+      "bytes": 4444069,
+      "sha256": "a9067a7a5200a7f15bd9f7658dbb8faede462e58d64d75caa38d8cad524dfe82",
+      "gzip_bytes": 752317,
+      "parts": [
+        {
+          "file": "a9067a7a5200a7f1.00.gzpart",
+          "bytes": 752317,
+          "sha256": "9bdcebf04e969f0438a0248c837c3c3bc23637bf3710598f932876c7074325f3"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/paired_led_gpio.joblib",
+      "bytes": 3598133,
+      "sha256": "0aaa3783715bd3116bec35d7aec562404026840221303a21a62c9c9a66ff91a6",
+      "gzip_bytes": 640395,
+      "parts": [
+        {
+          "file": "0aaa3783715bd311.00.gzpart",
+          "bytes": 640395,
+          "sha256": "be0cab40b5e5d9ef9fab8d56068fdd495e146559f6e6f5ebec47888db8bc9d72"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/paired_manifest.json",
+      "bytes": 4727,
+      "sha256": "d37a3a67f8cbecafcb273b615b03fd4336b81ccb9910061777a5f8a04113d15d",
+      "gzip_bytes": 1072,
+      "parts": [
+        {
+          "file": "d37a3a67f8cbecaf.00.gzpart",
+          "bytes": 1072,
+          "sha256": "ee5d4c44e330f61fefa23527b4373fd1ca1ccbecf9a70ad7331fe27789fb74be"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/paired_pwm_motor_servo.joblib",
+      "bytes": 3527221,
+      "sha256": "c7b061097dad89018805b756a1d156ab30aea9ab5c3039e015df9665e758cf78",
+      "gzip_bytes": 629891,
+      "parts": [
+        {
+          "file": "c7b061097dad8901.00.gzpart",
+          "bytes": 629891,
+          "sha256": "9cdaacf198f194077f27dc27ef4fc6976e0957161fb80b0a6c3b733ce07e8d65"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/generalization_v3/paired_uart_device.joblib",
+      "bytes": 4123653,
+      "sha256": "905ae6f60243a7038c4e29754dbf748c07980830d9ae0c2ee59803483a89062b",
+      "gzip_bytes": 757479,
+      "parts": [
+        {
+          "file": "905ae6f60243a703.00.gzpart",
+          "bytes": 757479,
+          "sha256": "8bb8b04f78a8828028c21bbbd933a1dfe73c4a87a7cef482c51c6e8784e31d69"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/adc_features_rf.joblib",
+      "bytes": 2687569,
+      "sha256": "a73c8b49d4cd3b948b33313ae8bc6c2d56efd3817adb63fdef352a4b6f136825",
+      "gzip_bytes": 466118,
+      "parts": [
+        {
+          "file": "a73c8b49d4cd3b94.00.gzpart",
+          "bytes": 466118,
+          "sha256": "119f8e062011c4e04a9a47453209611b79b87db6b5bc3f3ddcbbcbaf5c54ec20"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/adc_manifest.json",
+      "bytes": 2491,
+      "sha256": "b60ba928925b73a4553ef8335678a0d9ca688b04e51d7246996f15fccb193a8e",
+      "gzip_bytes": 846,
+      "parts": [
+        {
+          "file": "b60ba928925b73a4.00.gzpart",
+          "bytes": 846,
+          "sha256": "9a0387499729b392afccd903cc78e929391a714d51603fb6d27f59b0f23db698"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/adc_ood_detectors.joblib",
+      "bytes": 380290,
+      "sha256": "eca270398cdbf81f7ed38203423f2521a2059c1a8052e1204de20b88aa73b564",
+      "gzip_bytes": 345818,
+      "parts": [
+        {
+          "file": "eca270398cdbf81f.00.gzpart",
+          "bytes": 345818,
+          "sha256": "245fe0a3ae0a182c00161415820e3168ba173a9edfadfe14459d9ec63f096fa9"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/adc_ood_temporal.pt",
+      "bytes": 61829,
+      "sha256": "871d46b27641d6638d94d75130eb4f05a1ca5e5c2c2bbba43f59e8ec1b7be5db",
+      "gzip_bytes": 53950,
+      "parts": [
+        {
+          "file": "871d46b27641d663.00.gzpart",
+          "bytes": 53950,
+          "sha256": "3110c6e17894873d445dbc30656910b3ef4fbb19cbf807a1166efa994478fc23"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/adc_temporal.pt",
+      "bytes": 62117,
+      "sha256": "06eba33dbf051d4a02ef542fdd3b5549850c77ac46aad1226e593dc3b0b829a6",
+      "gzip_bytes": 54237,
+      "parts": [
+        {
+          "file": "06eba33dbf051d4a.00.gzpart",
+          "bytes": 54237,
+          "sha256": "d174bfdb4edab70084abcff35b4a497fd9ffde612b6617e9eeb3c915ca5f93d2"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/fusion_manifest.json",
+      "bytes": 3735,
+      "sha256": "64ef8d5ad9614512d8410f092be27a8c21a2a271ce3ba1e6655ea1253dce5287",
+      "gzip_bytes": 908,
+      "parts": [
+        {
+          "file": "64ef8d5ad9614512.00.gzpart",
+          "bytes": 908,
+          "sha256": "dc77feaefac4094d6b99a6a18761889bc493f38b7f13807cd6eabe8d210ff8be"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/i2c_features_rf.joblib",
+      "bytes": 1323729,
+      "sha256": "1720bf0629091f98dcb931fb951e13e3d2b6b6e6ec1ff7ea1fc08ecbffa8e89c",
+      "gzip_bytes": 229983,
+      "parts": [
+        {
+          "file": "1720bf0629091f98.00.gzpart",
+          "bytes": 229983,
+          "sha256": "038663786e5ed969ec8c55d0792174ce30a49022b8366e378b6bdf2c3fb8268b"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/i2c_manifest.json",
+      "bytes": 2451,
+      "sha256": "f4944f60e6b706c7b4c07c6faca8bd8496cb0fd1c1e893a0e457b32462fda8fb",
+      "gzip_bytes": 816,
+      "parts": [
+        {
+          "file": "f4944f60e6b706c7.00.gzpart",
+          "bytes": 816,
+          "sha256": "1a973b88ac6370d15fe8914f6a71592a2c1535d358430474056506d6299b7651"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/i2c_temporal.pt",
+      "bytes": 55909,
+      "sha256": "0f9860ae09a28515ff5b28b7082d0d3b38812c1e7bc4dca317157ee0d4542dc9",
+      "gzip_bytes": 48517,
+      "parts": [
+        {
+          "file": "0f9860ae09a28515.00.gzpart",
+          "bytes": 48517,
+          "sha256": "9cd7b392d0320763a8b2bbe0646b01734ff052413328feb8bb9a64d15d42373b"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/reliability_gate.pt",
+      "bytes": 28537,
+      "sha256": "f4dd21d39a23cd7ab97cf7d95072a17b86882d78a9637fc10e874b9f7b2e256d",
+      "gzip_bytes": 22139,
+      "parts": [
+        {
+          "file": "f4dd21d39a23cd7a.00.gzpart",
+          "bytes": 22139,
+          "sha256": "85e1f0269c5c73eaae2155eec46c9bf62f7b19b89dca01171cc17562bf101857"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/sensor_features_rf.joblib",
+      "bytes": 1617489,
+      "sha256": "79bc05bb2b7fa63ee87de13a67fc4f09a7e7203734f6116993973e88ef54b36d",
+      "gzip_bytes": 306173,
+      "parts": [
+        {
+          "file": "79bc05bb2b7fa63e.00.gzpart",
+          "bytes": 306173,
+          "sha256": "966f8a9e21f236c4a569d347804736cae02f26ed66922a66b046fb4c79b3e244"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/sensor_manifest.json",
+      "bytes": 2421,
+      "sha256": "6e192529f4f33670dae554532d1cff8677341e3db883dce1166261ce22847933",
+      "gzip_bytes": 797,
+      "parts": [
+        {
+          "file": "6e192529f4f33670.00.gzpart",
+          "bytes": 797,
+          "sha256": "296e90dbf6add022016fdb580ff5a3915f45d49771d0f2fae01b82c2b5b1195b"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/midterm_v1/sensor_temporal.pt",
+      "bytes": 58925,
+      "sha256": "450007845e484a9219bde50a15aec51aeeb806f9a4a2bc7d7e513f6c3c1b3a93",
+      "gzip_bytes": 51187,
+      "parts": [
+        {
+          "file": "450007845e484a92.00.gzpart",
+          "bytes": 51187,
+          "sha256": "08baf32b3d73042cc938d01d38f119cde96d50deb429c39c66167ca532a048cf"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/observable_v4_20261026/manifest.json",
+      "bytes": 3679,
+      "sha256": "1ce923335b27207ac78ca63270725cd0e38478b35b013213c2114c36e0c5b807",
+      "gzip_bytes": 963,
+      "parts": [
+        {
+          "file": "1ce923335b27207a.00.gzpart",
+          "bytes": 963,
+          "sha256": "6c07325f6c2149fa61b5f325c0d86cdf995ded815c095a57845f0257cc9b5900"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/observable_v4_20261026/observable_analog_adc.joblib",
+      "bytes": 17477649,
+      "sha256": "1e34880578abba03fc9ecb4ab9ec7127ac7b9d14411ef2132bd2a20c030b36b7",
+      "gzip_bytes": 3104511,
+      "parts": [
+        {
+          "file": "1e34880578abba03.00.gzpart",
+          "bytes": 3104511,
+          "sha256": "94520d6e3cd94919f019f15cbee1419597e3a3aa462c8773847c6d221155106c"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/observable_v4_20261026/observable_digital_input.joblib",
+      "bytes": 16820011,
+      "sha256": "9fae5a485c43d14cbb1a40df71d2cbd8d055a6b14f17a5b07b5a5c4294fe56d2",
+      "gzip_bytes": 2947733,
+      "parts": [
+        {
+          "file": "9fae5a485c43d14c.00.gzpart",
+          "bytes": 2947733,
+          "sha256": "3ef27885cc7ee67c8b1ee3f68ede63f65a3a196ac28d0d70eccda60d6a4cb03d"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/observable_v4_20261026/observable_i2c_sensor.joblib",
+      "bytes": 25056239,
+      "sha256": "d5a416adeaa2f3b44cc329003417995001581349e6fe0912933a4b810acf6420",
+      "gzip_bytes": 4079327,
+      "parts": [
+        {
+          "file": "d5a416adeaa2f3b4.00.gzpart",
+          "bytes": 4079327,
+          "sha256": "1b7370b8197098949d2c5745f94f0438527ef19bebc66666161cda8e34aaed5d"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/observable_v4_20261026/observable_led_gpio.joblib",
+      "bytes": 18331409,
+      "sha256": "7204c3c3e3ce8d4f7fc0fd9a68a9223f21473d6aaeb94a79f2c4378c50de5b1f",
+      "gzip_bytes": 3221626,
+      "parts": [
+        {
+          "file": "7204c3c3e3ce8d4f.00.gzpart",
+          "bytes": 3221626,
+          "sha256": "7f51c4a2aff4597024b9f31d4876b3a203bdeb60b31b281a1b2a1614a76fd90a"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/observable_v4_20261026/observable_pwm_motor_servo.joblib",
+      "bytes": 16334865,
+      "sha256": "263aa7570b563951774dc6a3b41f6b2bd84e7951152d4d4d96f376129baa0be4",
+      "gzip_bytes": 2917954,
+      "parts": [
+        {
+          "file": "263aa7570b563951.00.gzpart",
+          "bytes": 2917954,
+          "sha256": "0adcb674a42eba2718eb27c649d4a11004b6fb1527a6a8cdcb22bc59864cd04f"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/observable_v4_20261026/observable_uart_device.joblib",
+      "bytes": 19714703,
+      "sha256": "b731ddf3d38f0eff9d949a61000b04635a3ce0de68286dfd1d4f7ffaf26fb363",
+      "gzip_bytes": 3542202,
+      "parts": [
+        {
+          "file": "b731ddf3d38f0eff.00.gzpart",
+          "bytes": 3542202,
+          "sha256": "20a47529363f4229d1c34cb7201bc089b572d9a3dbe295add9c77d83c1793bac"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/dc_manifest.json",
+      "bytes": 11017,
+      "sha256": "0d8ebd136f8877631e685dba10a8d5b83b0417f2e957e01c686443ed46c0897d",
+      "gzip_bytes": 2610,
+      "parts": [
+        {
+          "file": "0d8ebd136f887763.00.gzpart",
+          "bytes": 2610,
+          "sha256": "6fe3f97860038688ee32d8adc74f4372ff5564379d99e2d8ff34d5247297d457"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/dc_reference_rf.joblib",
+      "bytes": 1250074,
+      "sha256": "02014f3090fa65ef626cf603484d20d5233d461f30650247566a800e7c10b080",
+      "gzip_bytes": 264570,
+      "parts": [
+        {
+          "file": "02014f3090fa65ef.00.gzpart",
+          "bytes": 264570,
+          "sha256": "d7172a78734ef22b8501659af3443273930e68cf90093bc16e89ae57379d70cc"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/expert_gate_analog_adc.pt",
+      "bytes": 30141,
+      "sha256": "5ee3a44b701769169a9b4f13b315a06aa3996abb3f6107ef36c757b0a64c859d",
+      "gzip_bytes": 23282,
+      "parts": [
+        {
+          "file": "5ee3a44b70176916.00.gzpart",
+          "bytes": 23282,
+          "sha256": "5fee9d0b746fddd886976c780ffa6925ead263f8c547e067c62e9a0f2b5724f4"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/expert_gate_digital_input.pt",
+      "bytes": 29823,
+      "sha256": "52d587b6f21a8a230205f452afb1aad3b832f9ee95406b784e262eaefbd74196",
+      "gzip_bytes": 22929,
+      "parts": [
+        {
+          "file": "52d587b6f21a8a23.00.gzpart",
+          "bytes": 22929,
+          "sha256": "882f86b139b7fda43f2798c7db95b0a70c4ffa34664c78a79f09da818d6c2240"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/expert_gate_i2c_sensor.pt",
+      "bytes": 33085,
+      "sha256": "b62e04ea04a2ea3448c72a8d26945ee2071c3b47806a7b0c6aa7a304be79c0e8",
+      "gzip_bytes": 25841,
+      "parts": [
+        {
+          "file": "b62e04ea04a2ea34.00.gzpart",
+          "bytes": 25841,
+          "sha256": "b328f7a93556ab4d0e3190ed179685a56acbecdaca4f9e34171cbbf0580efb2d"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/expert_gate_led_gpio.pt",
+      "bytes": 30545,
+      "sha256": "08e6aa30c7e1ddac6690d169ffba6165dacfca3ffb5bf05113789aa6dab9514a",
+      "gzip_bytes": 23737,
+      "parts": [
+        {
+          "file": "08e6aa30c7e1ddac.00.gzpart",
+          "bytes": 23737,
+          "sha256": "88d7d48c8cc6d1ca8c799dbda03b6523cdaac87aa3d77efc8c066b577aa06ba8"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/expert_gate_pwm_motor_servo.pt",
+      "bytes": 30763,
+      "sha256": "ee7cc2d74e557f9c3ed6990c74ad4f326a0a75375f938f8458841e8203e0b34d",
+      "gzip_bytes": 23760,
+      "parts": [
+        {
+          "file": "ee7cc2d74e557f9c.00.gzpart",
+          "bytes": 23760,
+          "sha256": "2fc374eb1674f08f0c6c6b1a51f8fd6d0066c52615ccf502a9f5b239c6032e40"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/expert_gate_uart_device.pt",
+      "bytes": 32595,
+      "sha256": "8bd7c9712f99f7ced748fe890165e37bfe0530ac9996567df34ed8b4d026232c",
+      "gzip_bytes": 25459,
+      "parts": [
+        {
+          "file": "8bd7c9712f99f7ce.00.gzpart",
+          "bytes": 25459,
+          "sha256": "38a90a8702a418d460bfbae3083da8829a734f3d5971376c38eff8ec982e47d4"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/ood_conditioned.joblib",
+      "bytes": 125190,
+      "sha256": "b7622c5b56c7fbf7ef1016abc8e3ff9d93a58a3e69eba4b3988b08796bea61cb",
+      "gzip_bytes": 113233,
+      "parts": [
+        {
+          "file": "b7622c5b56c7fbf7.00.gzpart",
+          "bytes": 113233,
+          "sha256": "e52604f8424044f6e1f8ac18cf130dd9cdf898c06909ea42952d791fbc037efa"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/sensor_physical_rf.joblib",
+      "bytes": 1093425,
+      "sha256": "e32bd7977eeb8f86f2a686396e5453a320208bdf9374a5048a6c5fa10839f4fb",
+      "gzip_bytes": 219836,
+      "parts": [
+        {
+          "file": "e32bd7977eeb8f86.00.gzpart",
+          "bytes": 219836,
+          "sha256": "4650494e5a01bb3185f2acae49f11f0296f955f44294bb9e33410614f354b0e2"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/sensor_selection.json",
+      "bytes": 746,
+      "sha256": "e46071b69833e9cdb53c73728fe10e7da35c125dbc46bd0c9a4fbf73406034b2",
+      "gzip_bytes": 381,
+      "parts": [
+        {
+          "file": "e46071b69833e9cd.00.gzpart",
+          "bytes": 381,
+          "sha256": "9363678d0d3a73d543839ef374a2524a93669e52fd0cf4164e17593ad34ae9b0"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/sensor_temporal.pt",
+      "bytes": 64173,
+      "sha256": "af437353f5137d07f856e15e17b06e65f6189b3816c0ca05cbd6006d11a3bee4",
+      "gzip_bytes": 56035,
+      "parts": [
+        {
+          "file": "af437353f5137d07.00.gzpart",
+          "bytes": 56035,
+          "sha256": "6810e19a12aad8b7bfeae318d8763c363051c7f513efc4916ac9b809bbe539bd"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/reliability_v2/six_system_manifest.json",
+      "bytes": 4726,
+      "sha256": "ff93113bf1772d167f918d6a60096c9c47544ac622b450bc4ae79ca05f00f54d",
+      "gzip_bytes": 1465,
+      "parts": [
+        {
+          "file": "ff93113bf1772d16.00.gzpart",
+          "bytes": 1465,
+          "sha256": "315279b1352d52fc6e5c509365f620b07ba7960561090e93e75222ca2f86ee0f"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/waveform/adc/cnn.pt",
+      "bytes": 41642,
+      "sha256": "fa39084bf2ef81be07492bf68873758235841563700097f1d2c1b3b693847c6c",
+      "gzip_bytes": 35225,
+      "parts": [
+        {
+          "file": "fa39084bf2ef81be.00.gzpart",
+          "bytes": 35225,
+          "sha256": "754b0e100803353a99fa7ffb76d7b3e3bccd9de0ac9d768f9fa5dd3f629c44ae"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/waveform/adc/fusion.joblib",
+      "bytes": 1113437,
+      "sha256": "450a82b1204a6d688dcd1786848648ed103d580e84f63940dcd70d734d38eb9b",
+      "gzip_bytes": 88865,
+      "parts": [
+        {
+          "file": "450a82b1204a6d68.00.gzpart",
+          "bytes": 88865,
+          "sha256": "10e87df1032831d9bce73c915565f9ee1b1b8c123506d72c02c664a6dd194ddc"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/waveform/i2c/cnn.pt",
+      "bytes": 41898,
+      "sha256": "8084e5aa91a3e05dcca6dfdce6009e24636eec695e5e16ee38c1afb019a6b1aa",
+      "gzip_bytes": 35510,
+      "parts": [
+        {
+          "file": "8084e5aa91a3e05d.00.gzpart",
+          "bytes": 35510,
+          "sha256": "9948b7665b32c3155c2a645a3bb452f76af9622108f2743baf4ccfa6d58cd7cf"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/waveform/adc/ood/ood_cnn.pt",
+      "bytes": 42270,
+      "sha256": "edb3775ee263e15d7d29f5debf18e2496be68b1756339a2ca9e6a15cdeabdd56",
+      "gzip_bytes": 35016,
+      "parts": [
+        {
+          "file": "edb3775ee263e15d.00.gzpart",
+          "bytes": 35016,
+          "sha256": "188c1835490a4a9e32f13630ee460e834682ce491bf4a387f19b69152a548f98"
+        }
+      ]
+    },
+    {
+      "path": "models/experimental/waveform/adc/ood/ood_detector.joblib",
+      "bytes": 5625,
+      "sha256": "637f4fd3b400b00d2f3bb30fe25fed1eef1dbb2d1688005607e885a7c070c793",
+      "gzip_bytes": 4916,
+      "parts": [
+        {
+          "file": "637f4fd3b400b00d.00.gzpart",
+          "bytes": 4916,
+          "sha256": "18a5d5cbe3643878029afe1d1a3bc7705f2edc7179ee17a3c1211543212e2d57"
+        }
+      ]
+    },
+    {
+      "path": "results/next_round/adc_selector_train_reference.csv",
+      "bytes": 27760,
+      "sha256": "c74d733e93a66b968f570e221c5f178cb87529692578f92c8acae76a723b739d",
+      "gzip_bytes": 5759,
+      "parts": [
+        {
+          "file": "c74d733e93a66b96.00.gzpart",
+          "bytes": 5759,
+          "sha256": "52ad1bf9a2898e9678b3e971b4e8101d92f1b355ee92514405b86b6cfeda445c"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/arduino-cli.tar.gz",
+      "bytes": 17346899,
+      "sha256": "a5ad085d1b02fd4010df18b1bbf20453276efe6c6e2ac323baa0cac4e96a85b4",
+      "gzip_bytes": 17311055,
+      "parts": [
+        {
+          "file": "a5ad085d1b02fd40.00.gzpart",
+          "bytes": 16777216,
+          "sha256": "4e6ac8a47978aeda126054e6ff60ba5cc07ef446bad66e8f23d77d4888655bb3"
+        },
+        {
+          "file": "a5ad085d1b02fd40.01.gzpart",
+          "bytes": 533839,
+          "sha256": "b8bc140eee3bc70ca11740b1523ef202dbb5e8ecb0a06cc38ee1143b31e31b54"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/arduino-core.tar.gz",
+      "bytes": 7946093,
+      "sha256": "2fc99766e434c5c708e49025b017a5d409fc18297caeea26d9d7ebfdc8272558",
+      "gzip_bytes": 7862143,
+      "parts": [
+        {
+          "file": "2fc99766e434c5c7.00.gzpart",
+          "bytes": 7862143,
+          "sha256": "b2a6129e11e562fe8c0aa7405bf279d2a2d2a674e330bd0201e169e2484e2c7b"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/avr-gcc.tar.bz2",
+      "bytes": 37630618,
+      "sha256": "bd8c37f6952a2130ac9ee32c53f6a660feb79bee8353c8e289eb60fdcefed91e",
+      "gzip_bytes": 37554274,
+      "parts": [
+        {
+          "file": "bd8c37f6952a2130.00.gzpart",
+          "bytes": 16777216,
+          "sha256": "4189257482db76e440b74f81bd901cac93ce65978614f105db08280d7b8692db"
+        },
+        {
+          "file": "bd8c37f6952a2130.01.gzpart",
+          "bytes": 16777216,
+          "sha256": "47cabdd0bc854fbf2377ef0a7e66c2ee320e7fc7d446a3be662c0767876136a8"
+        },
+        {
+          "file": "bd8c37f6952a2130.02.gzpart",
+          "bytes": 3999842,
+          "sha256": "52cf25aaa9364b332abefca031e51f61b0d847daaca76e982941bd8067e6a0ec"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/ctags.tar.bz2",
+      "bytes": 111604,
+      "sha256": "62b514f3aaf37b5429ef703853bb46365fb91b4754c1916d085bf134004886e3",
+      "gzip_bytes": 111657,
+      "parts": [
+        {
+          "file": "62b514f3aaf37b54.00.gzpart",
+          "bytes": 111657,
+          "sha256": "ed624e2ccfebe69211c478a1bcf5fcfab88a1bbd5912c88f462084aee34f53fa"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/serial-discovery.tar.gz",
+      "bytes": 2163207,
+      "sha256": "7a95d7386c66c0846fe4aa96b601e72783ae64f541eb2f5edb4fc9e69a04b6d3",
+      "gzip_bytes": 2161174,
+      "parts": [
+        {
+          "file": "7a95d7386c66c084.00.gzpart",
+          "bytes": 2161174,
+          "sha256": "cb8f68e0c159cdaa5039d122d07a40374cd602a3aa41dfd072c3b05d026f01e9"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/mdns-discovery.tar.gz",
+      "bytes": 3220729,
+      "sha256": "6966f406e5b6e80d82a388706d6d9d8a63d46035d19d1e6b4fb1ebeaf7fea056",
+      "gzip_bytes": 3217055,
+      "parts": [
+        {
+          "file": "6966f406e5b6e80d.00.gzpart",
+          "bytes": 3217055,
+          "sha256": "2ea5a0580ffab5a9184280bcd68df28a3bd1b08e180f22dc763602181ec676c8"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/serial-monitor.tar.gz",
+      "bytes": 2446183,
+      "sha256": "f1bc9680f2cff08688bc4ccbaf5e9be4ce38aa3f10d40a487a7704c04006f19b",
+      "gzip_bytes": 2443957,
+      "parts": [
+        {
+          "file": "f1bc9680f2cff086.00.gzpart",
+          "bytes": 2443957,
+          "sha256": "a2650bc65c090804ca622c620d0f36c7487e3f92976999e305788ec5b92cb863"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/dfu-discovery.tar.gz",
+      "bytes": 1731768,
+      "sha256": "d82649741fd6cbe369d7fe22d290efd7e28e4d6fd0b81b7b1eabff43b495b5f8",
+      "gzip_bytes": 1729326,
+      "parts": [
+        {
+          "file": "d82649741fd6cbe3.00.gzpart",
+          "bytes": 1729326,
+          "sha256": "8446042e28145ab857c7a303d2f3ddfa0289e18f948be54fe133e146bea928b6"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/bubblewrap.deb",
+      "bytes": 46314,
+      "sha256": "706763714e5d19fc7ab2572a6418506e3a4a5d5960e99309707b58117e6b40cb",
+      "gzip_bytes": 46224,
+      "parts": [
+        {
+          "file": "706763714e5d19fc.00.gzpart",
+          "bytes": 46224,
+          "sha256": "21839a953f35ca6936b8651bd84aeb3dec0c5f8f2c0f578ce285043f6741734c"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/package_index.json",
+      "bytes": 1740554,
+      "sha256": "3199ffc5d57635cdeafccc05a1c57cf567dd4aa09d9b50083ed49ccc1a44c51c",
+      "gzip_bytes": 142271,
+      "parts": [
+        {
+          "file": "3199ffc5d57635cd.00.gzpart",
+          "bytes": 142271,
+          "sha256": "24d6e63db29638cdb7902529c58f66f7813403f64ae9f915f64a2776d9e79750"
+        }
+      ]
+    },
+    {
+      "path": "compiler_downloads/library_index.json",
+      "bytes": 60399086,
+      "sha256": "894c81bc87ee613aeee16656eb30b2da4635dc526b6f561576d92cc8515a89f5",
+      "gzip_bytes": 5673950,
+      "parts": [
+        {
+          "file": "894c81bc87ee613a.00.gzpart",
+          "bytes": 5673950,
+          "sha256": "ed332c176dc62a38d469c44b5adf6cf69667f985e9f44e5d0963e08e93a59e8e"
+        }
+      ]
+    },
+    {
+      "path": "results/integrated_active_simulation_20261101/FEATURE_ENABLED",
+      "bytes": 65,
+      "sha256": "3a1bc0f2a06cf4e4f6fa8bd570b53c5e9ac34760a29845ebfb868ebe57286463",
+      "gzip_bytes": 84,
+      "parts": [
+        {
+          "file": "3a1bc0f2a06cf4e4.00.gzpart",
+          "bytes": 84,
+          "sha256": "8596bedc813f72e0e0d43944fb8f8592187886a59e537b6c904f9661494ec182"
+        }
+      ]
+    },
+    {
+      "path": "results/integrated_active_simulation_20261101/INTERVAL_GATES.json",
+      "bytes": 2378,
+      "sha256": "90f3747df27a38a264636abe67f479ade4dde2f5f6610241cf44af0883b9393e",
+      "gzip_bytes": 465,
+      "parts": [
+        {
+          "file": "90f3747df27a38a2.00.gzpart",
+          "bytes": 465,
+          "sha256": "b73322ca735f4a2b06486b9501fcab7454789a876386a15d3f6c73840d364171"
+        }
+      ]
+    },
+    {
+      "path": "results/integrated_active_simulation_20261101/parameter_model.joblib",
+      "bytes": 407714,
+      "sha256": "d9c9b1fd1a7d2acb378e5ce3078ed6cb0c54e10dade88e3c327c28f0fc7ee068",
+      "gzip_bytes": 59721,
+      "parts": [
+        {
+          "file": "d9c9b1fd1a7d2acb.00.gzpart",
+          "bytes": 59721,
+          "sha256": "85b751647cfbb650b335d7d8b6dcf6c65d2f175249843c1abcb1c30ab87a6e8d"
+        }
+      ]
+    },
+    {
+      "path": "results/integrated_active_simulation_20261101/PARAMETER_CALIBRATION.json",
+      "bytes": 1090,
+      "sha256": "bc3d2a0b46e5bf3b613084d0217f78e5907cf17d79981f9f1ff887cd83542184",
+      "gzip_bytes": 283,
+      "parts": [
+        {
+          "file": "bc3d2a0b46e5bf3b.00.gzpart",
+          "bytes": 283,
+          "sha256": "b022d21800fcb7a8f612e78bedc25a9a590f6197f50d19191fbf082c6d669733"
+        }
+      ]
+    },
+    {
+      "path": "results/targeted_active_repair_20261101/CALIBRATION.json",
+      "bytes": 633,
+      "sha256": "0c5e06defcd182a4a28ed83f7697bac782082a2fc008dfc5200fd1e88e688a19",
+      "gzip_bytes": 245,
+      "parts": [
+        {
+          "file": "0c5e06defcd182a4.00.gzpart",
+          "bytes": 245,
+          "sha256": "36649a81c3cd434c7e5d008f0feafecf2fa1149b31d82beb3d82f31591393178"
+        }
+      ]
+    },
+    {
+      "path": "results/integrated_active_simulation_20261101/ASSET_HASHES.json",
+      "bytes": 224,
+      "sha256": "d55101b25de388fc379d22a2526ee1aeb7e5ab065d5c35448a8ac2ffeb14bc28",
+      "gzip_bytes": 202,
+      "parts": [
+        {
+          "file": "d55101b25de388fc.00.gzpart",
+          "bytes": 202,
+          "sha256": "2e9601093e8c824d9738e90e91e5d68e2c29e471c487d0f67fc0044541d7c7a3"
+        }
+      ]
+    },
+    {
+      "path": "results/targeted_active_repair_20261101/RUNTIME_RELEASE.json",
+      "bytes": 2780,
+      "sha256": "c149f793e21c83774d6f39316fd8a24ae35e05ed9f1c78d5edd37955ec5e646f",
+      "gzip_bytes": 1020,
+      "parts": [
+        {
+          "file": "c149f793e21c8377.00.gzpart",
+          "bytes": 1020,
+          "sha256": "68f23a56a81fb32c0f96b181be427fd909641225faf2063c81c3257c665ac4e3"
+        }
+      ]
+    }
+  ]
+}

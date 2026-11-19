@@ -1,0 +1,15 @@
+{
+  "NO_POWER": "No Power",
+  "NO_OUTPUT": "No Output",
+  "INCORRECT_OUTPUT": "Incorrect Output",
+  "OUTPUT_TOO_HIGH": "Output Too High",
+  "OUTPUT_TOO_LOW": "Output Too Low",
+  "UNSTABLE_OUTPUT": "Unstable Output",
+  "DEVICE_NOT_DETECTED": "Device Not Detected",
+  "COMMUNICATION_FAILURE": "Communication Failure",
+  "INTERMITTENT_COMMUNICATION": "Intermittent Communication",
+  "NO_RESPONSE": "No Response",
+  "INCORRECT_SPEED": "Incorrect Speed",
+  "INCORRECT_POSITION": "Incorrect Position",
+  "OTHER": "Other"
+}
