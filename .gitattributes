@@ -20,6 +20,7 @@
 *.java text eol=lf
 *.md text eol=lf
 *.ps1 text eol=crlf
+*.cmd text eol=crlf
 # These bytes are pinned by runtime SHA-256 checks.
 mendix/resources/microexplore/public-teaching-catalog.json -text
 backend/research/targeted_active_repair_20261101/core.py -text

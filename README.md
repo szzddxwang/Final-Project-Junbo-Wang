@@ -80,14 +80,14 @@ The backend binds only to loopback. It is intended for this local application. D
 
 ## 5. Open the Mendix application
 
-Close any existing Studio Pro window normally. In Windows PowerShell, run the supplied launcher with the actual location of Studio Pro:
+Close any existing Studio Pro window normally. In Windows Command Prompt, run the supplied launcher with the actual location of Studio Pro:
 
-```powershell
-cd H:\MicroExplore
-.\setup\Open-Mendix.ps1 -StudioProPath 'H:\11.14.0\modeler\studiopro.exe'
+```bat
+cd /d H:\MicroExplore
+setup\Open-Mendix.cmd "H:\11.14.0\modeler\studiopro.exe"
 ```
 
-If your WSL distribution has a different name, add `-WslDistribution 'YourDistributionName'`. The launcher sets `MICROEXPLORE_BACKEND_ROOT` for this Studio process so Java can find the new credential. It sets `MICROEXPLORE_WSL_DISTRO` for the compiler. These are process settings; they do not change your network or system-wide environment.
+If your WSL distribution has a different name, add its quoted name as the second argument, for example `setup\Open-Mendix.cmd "H:\11.14.0\modeler\studiopro.exe" "YourDistributionName"`. The launcher sets `MICROEXPLORE_BACKEND_ROOT` for this Studio process so Java can find the new credential. It sets `MICROEXPLORE_WSL_DISTRO` for the compiler. These are process settings; they do not change your network or system-wide environment. The launcher does not use PowerShell scripts and does not require changing PowerShell execution policy.
 
 The public source's `DiagnosisAPIBaseURL` constant already defaults to `http://127.0.0.1:8000`. Keep this value for local operation. Do not enter the production cloud backend address or credentials. If Studio Pro was opened before the launcher, close it normally and launch again so the process receives the settings.
 
