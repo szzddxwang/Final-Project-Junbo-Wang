@@ -111,6 +111,8 @@ After the import, return to Home and verify its four featured resources. Open El
 
 Use the existing **Create an account** registration link for a Learner account, or create one through account administration. Each person should have their own password. A learner can read, complete checks, use experiments, save projects and submit resources. Only administrators approve publication.
 
+Use the registered **Learner** account for diagnosis activities. The built-in `MxAdmin` is an installation administrator and does not have a learner profile. Attempting to create a diagnosis under that bootstrap identity produces an error. An administrator who also wants to perform learner activities should register a separate Learner account.
+
 Open Circuit Workbench, load a supported example, and select **Compile & Run**. The browser sends a request through Mendix. The Python backend compiles the sketch in a worker with no network access and no host directory mounts. Firmware returns to the browser simulator. The application saves code, circuit connections and captures in the local Mendix database and file storage.
 
 The supported board views are Uno R3, Nano, Pro Mini, Mega 2560 and Raspberry Pi Pico. Available peripherals and program support are bounded by the implemented teaching models. The Pico execution instruction budget can stop long or complex captures. An unsupported case must be reported as unsupported rather than treated as hardware-equivalent behavior.
